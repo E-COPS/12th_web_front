@@ -17,7 +17,7 @@ const MyHeader = () => {
     navigate("/activity", { replace: true });
   };
   const clickRecruitment = () => {
-    navigate("/program", { replace: true });
+    navigate("/recruiting", { replace: true });
   };
 
   return (
