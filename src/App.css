@@ -17,18 +17,10 @@ body {
   .App {
     width: 100vw;
   }
-  header {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    justify-content: space-between;
-
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid #e2e2e2;
-  }
 }
 
 /* MyHeader */
+
 header {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -66,4 +58,87 @@ header text {
   font-weight: 400;
 
   cursor: pointer;
+}
+
+/* Footer */
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  border-top: 1px solid #a9a7a3;
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+footer .footer_first_line {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .blue_logo {
+  padding-right: 10px;
+  padding-left: 5vw;
+  padding-top: 1vw;
+
+  width: 177px;
+  height: 38.58px;
+  align-items: start;
+
+  cursor: pointer;
+}
+
+footer text {
+  padding-top: 20px;
+  padding-right: 3vw;
+  height: 19px;
+
+  color: #a9a7a3;
+  font-size: 16px;
+  font-weight: 400;
+
+  cursor: pointer;
+}
+
+footer .foot {
+  display: flex;
+  align-items: flex-end;
+  padding-right: 3vw;
+}
+
+footer .sns_logo {
+  display: flex;
+
+  padding-top: 4vw;
+  padding-left: 5vw;
+  cursor: pointer;
+}
+
+.sns_logo_button {
+  padding-right: 1.5vw;
+  width: 40px;
+  height: 40px;
+}
+
+/* Home */
+
+.Home {
+}
+
+.home_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.home_logo_img {
+  width: 85vw;
+}
+
+.home_description {
+  background-color: #3399ff;
+  height: 312px;
 }
