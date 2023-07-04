@@ -1,4 +1,9 @@
 import "./App.css";
+import "./styles/Activity.css";
+import "./styles/Home.css";
+import "./styles/Member.css";
+import "./styles/Program.css";
+import "./styles/Recruiting.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MyHeader from "./components/MyHeader";
 import MyFooter from "./components/MyFooter";
@@ -14,13 +19,15 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <MyHeader />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/activity" element={<Activity />} />
-          <Route path="/member" element={<Member />} />
-          <Route path="/program" element={<Program />} />
-          <Route path="/recruiting" element={<Recruiting />} />
-        </Routes>
+        <div id="wrapper">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/activity" element={<Activity />} />
+            <Route path="/member" element={<Member />} />
+            <Route path="/program" element={<Program />} />
+            <Route path="/recruiting" element={<Recruiting />} />
+          </Routes>
+        </div>
         <MyFooter />
       </div>
     </BrowserRouter>
