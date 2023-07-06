@@ -149,6 +149,14 @@ footer .sns_logo {
 .home_description {
   background-color: #3399ff;
   height: 312px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home_ecops_logo {
+  width: 5vw;
 }
 
 /* Recruiting */
