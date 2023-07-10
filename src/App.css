@@ -151,12 +151,48 @@ footer .sns_logo {
   height: 312px;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
 .home_ecops_logo {
-  width: 5vw;
+  width: 4vw;
+  padding-bottom: 25px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.home_description_text_kr {
+  padding-bottom: 25px;
+}
+
+.home_ewha_logo {
+  width: 27vw;
+  padding-left: 10vw;
+  padding-top: 8vw;
+  position: absolute;
+}
+
+.home_description_2_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding-top: 150px;
+}
+
+.home_description_2_intro {
+  position: relative;
+  font-weight: bold;
+  font-size: 3vw;
+}
+
+.home_description_padding {
+  padding-top: 50px;
 }
 
 /* Recruiting */
