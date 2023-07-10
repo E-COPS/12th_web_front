@@ -1,6 +1,7 @@
 import home_logo from "..//assets/home_logo.svg";
 import ecops_logo from "..//assets/ecops_logo.png";
 import ewha_logo from "..//assets/ewha_womans_univ_logo.svg";
+import hspace_logo from "..//assets/hspace_logo.svg";
 
 const Home = () => {
   return (
@@ -26,7 +27,7 @@ const Home = () => {
       <div className="home_description_2">
         <img src={ewha_logo} alt="ewha_logo" className="home_ewha_logo"></img>
         <div className="home_description_2_text">
-          <h2 className="home_description_2_intro">E-COPS는 이런 동아리야!</h2>{" "}
+          <h2 className="home_description_2_intro">E-COPS는 이런 동아리야!</h2>
           <text>E-COPS(EWHA-CONTROL OF PROGRAM SECURITY)는</text>
           <text>
             이화여대 학생이라면 누구나 참여할 수 있는 이화여자대학교 대표 사이버
@@ -45,6 +46,19 @@ const Home = () => {
           </text>
           <text>내/외부적으로 활발하게 활동을 이어 나가고 있습니다.</text>
         </div>
+        <div className="home_description_partner">
+          <div className="home_description_partner_intro">
+            <text>E-COPS와 함께하는 파트너</text>
+          </div>
+          <img src={hspace_logo} alt="hspace_logo"></img>
+        </div>
+        <div className="ecops_yellow_line">
+          <text>EWHA - CONTROL OF PROGRAM SECURITY</text>
+          <text>EWHA - CONTROL OF PROGRAM SECURITY</text>
+          <text>EWHA - CONTROL OF PROGRAM SECURITY</text>
+          <text>EWHA - CONTROL OF PROGRAM SECURITY</text>
+        </div>
+        <div className="blue_line"></div>
       </div>
     </div>
   );
