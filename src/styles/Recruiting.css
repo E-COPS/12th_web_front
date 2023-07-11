@@ -1,0 +1,258 @@
+.challenger_box{
+box-sizing: border-box;
+
+position: relative;
+width: 50vw;
+height: 65vh;
+left:1px;
+margin-top: 20vw;
+
+background: #DBFE79;
+border: 1px solid #000000;
+
+}
+
+.begginer_box{
+  
+box-sizing: border-box;
+
+position: relative;
+width: 50vw;
+left:50vw;
+height: 65vh;
+margin-top:-65vh;
+
+background: #9EEEFC;
+border: 1px solid #000000;
+
+}
+
+.red_text{
+    /* CHALLENGER TRACK */
+position:relative;
+top:10vh;
+left:3vw;
+
+font-family: 'Inter';
+font-weight: bold;
+font-size: 3.2vw;
+line-height: 58px;
+
+text-shadow: 3px 0px 1px black ;
+
+color: #FF0000;
+
+
+}
+
+.black_text1{
+
+position:absolute;
+top:20vh;
+left:3vw;
+
+font-family: 'Inter';
+font-weight: normal;
+font-size: 3.2vw;
+line-height: 58px;
+
+color:#000000;
+    
+}
+
+.purple_text{
+    /* BEGINNER TRACK */
+
+position:relative;
+top:10vh;
+left:3vw;
+
+font-family: 'Inter';
+font-weight: bold;
+font-size: 3.2vw;
+line-height: 58px;
+/* identical to box height */
+
+color: #CE9EFF;
+
+text-shadow: 3px 0px 1px black;
+
+
+}
+
+.black_text2{
+    position:relative;
+    left:2vw;
+
+    font-size:16px;
+    font-family: 'Inter';
+    line-height: 19px;
+}
+
+.basicContainer{
+    background-color: #f7f5f1;
+    justify-content: center;
+    display: flex;
+    min-height: 100vh;
+
+}
+
+.black_text3{
+    /* E-COPS 12.5기 모집 */
+
+position: absolute;
+padding-top:50vh;
+justify-content: center;
+
+font-family: 'Inter';
+font-weight: 700;
+font-size: 4.3vw;
+line-height: 77px;
+
+color: #000000;
+}
+
+.recruiting_star{
+   position: relative;
+
+   right:35vw;
+   top:25vh;
+
+   width: 14vw;
+}
+
+.black_text4{
+
+    position: absolute;
+    padding-top:70vh;
+    line-height: 19.36px;
+  
+    font-size:1.1vw;
+    font-family: 'Inter';
+    line-height: 19px;
+}
+
+.applyButton{
+
+
+box-sizing: border-box;
+
+position: absolute;
+width: 10vw;
+height: 5vh;
+margin-top:80vh;
+margin-left:73vw;
+
+background: #D9D9D9;
+border: 1px solid #3399FF;
+border-radius: 17px;
+color:#3399FF;
+box-shadow: 0 2px;
+
+
+}
+
+.button:hover{
+    transform:scale(1.2);
+    cursor: pointer;
+}
+
+.recruiting_process{
+    position:relative;
+    padding-top:30vh;
+    justify-content: center;
+    width:90vw;
+    padding-bottom:25vh;
+}
+
+.black_bold_text{
+    /* RECRUITING PROCESS */
+position:relative;
+top:20vh;
+left:25%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 4.3vw;
+
+color: #000000;
+
+
+}
+
+.black_bold_text2{
+    /* 자주 묻는 질문 */
+
+position: absolute;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 4.3vw;
+line-height: 77px;
+
+color: #000000;
+
+
+
+}
+
+.toggleBox{
+    position:relative;
+    padding-top: 30vh;
+
+    text-align: center;
+}
+
+.questionToggle{
+
+position:relative;
+padding-bottom:10vh;
+
+box-sizing: border-box;
+
+width: 86vw;
+height: 72px;
+
+background: #F0EEEB;
+border-radius: 5px;
+border:none;
+
+/* Q : E-COPS는 어떤 동아리인가요? */
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+
+text-align: center;
+
+}
+
+.button2:visited{
+    background-color: white;
+}
+
+.answerToggle{
+/*answeBox */
+
+position: relative;
+margin-top:72px;
+right:8px;
+width: 86vw;
+height: 178px;
+
+
+background: #F0EEEB;
+
+}
+
+
+@media (max-width: 650px) {
+
+    .black_text4{
+        font-size:10px;
+    }
+        
+  }
