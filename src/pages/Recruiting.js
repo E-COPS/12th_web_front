@@ -2,24 +2,40 @@ import {useState} from "react";
 import recruiting_logo from "..//assets/recruiting_logo.svg";
 import recruiting_star from "..//assets/recruiting_star.svg";
 import recruiting_process from "..//assets/recruiting_process.svg";
+import recruiting_up from "..//assets/recruituing_up.svg";
 
 
 
 const Recruiting = () => {
 
-const [IsCheck,setCheck] = useState(false);
+const [IsCheck,setCheck] = useState([false,false,false]);//토글 구현 
+const [IsColor,setColor] = useState([false,false,false]);//토글 색 
 
-const CheckToggle = () => {
+function handleClick(index){
+  setColor((prevColor) => {
+    const updateColor = [...prevColor];
+    updateColor[index] = !updateColor[index];
+    return updateColor;
+  });
+}
+
+const onClick = (index) => {
+  setCheck((prevCheck) => {
+    const updateCheck = [...prevCheck];
+    updateCheck[index] = !updateCheck[index];
+    return updateCheck;
+  });
+
+};
+
+
+const CheckToggle= () => {
   return (
     <div className="answerToggle">
-
     </div>
   )
 }
 
-const onClick = () => {
-  setCheck((e) => !e);
-}
 
   return (
     <div className="recruiting">
@@ -73,18 +89,26 @@ const onClick = () => {
           <div className="basicContainer">
             <text className="black_bold_text2">자주 묻는 질문</text>
             <div className="toggleBox">
+              
               <button 
-              className="questionToggle button2"  
-              onClick = {onClick}>{IsCheck? <CheckToggle/>:null}
-              Q: ECOPS는 어떤 동아리인가요?
+              className={IsColor[0]? "questionToggle2":"questionToggle"}
+              onClick = {() => {onClick(0); handleClick(0);}}>
+                
+                {IsCheck[0]? <CheckToggle/>:null}
+                 
               </button>
               <button 
-              className="questionToggle" 
-              onClick = {onClick}>{IsCheck? <CheckToggle/>:null}
+              className={IsColor[1]? "questionToggle2":"questionToggle" }
+              onClick = {() => {onClick(1); handleClick(1); }}>
+                
+                {IsCheck[1]? <CheckToggle/>
+                :null}
               </button>
               <button 
-              className="questionToggle" 
-              onClick = {onClick}>{IsCheck? <CheckToggle/>:null}
+              className={IsColor[2]? "questionToggle2":"questionToggle" }
+              onClick = {() => {onClick(2); handleClick(2);}}>
+                 
+                {IsCheck[2]? <CheckToggle/>:null}
               </button>
             </div>
           </div>

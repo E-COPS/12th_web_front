@@ -148,6 +148,8 @@ border: 1px solid #3399FF;
 border-radius: 17px;
 color:#3399FF;
 box-shadow: 0 2px;
+font-size: 1.0vw;
+text-align: center;
 
 
 }
@@ -194,8 +196,6 @@ line-height: 77px;
 
 color: #000000;
 
-
-
 }
 
 .toggleBox{
@@ -203,41 +203,46 @@ color: #000000;
     padding-top: 30vh;
 
     text-align: center;
+    justify-content: center;
 }
 
 .questionToggle{
 
 position:relative;
-padding-bottom:10vh;
+margin-bottom:3vh;
 
 box-sizing: border-box;
 
 width: 86vw;
-height: 72px;
+height: 10vh;
 
 background: #F0EEEB;
 border-radius: 5px;
 border:none;
 
-/* Q : E-COPS는 어떤 동아리인가요? */
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-
-text-align: center;
 
 }
 
-.button2:visited{
-    background-color: white;
+
+.questionToggle2{
+    
+    box-sizing: border-box;
+    
+    width: 86vw;
+    height: 72px;
+    
+    background: #FFFFFF;
+    border-radius: 5px;
+    border:none;
+    
+    
 }
 
 .answerToggle{
 /*answeBox */
 
 position: relative;
+margin-bottom: 3vh;
 margin-top:72px;
 right:8px;
 width: 86vw;
@@ -246,6 +251,12 @@ height: 178px;
 
 background: #F0EEEB;
 
+}
+
+.black_text5{
+    
+    font-size:16px;
+    font-family: 'Inter';
 }
 
 
