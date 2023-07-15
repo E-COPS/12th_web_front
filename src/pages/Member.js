@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useParams } from "react-router-dom";
 import MemberList from "./MemberList";
-import profile_example from "../assets/profile_example.png";
+import profile_example from "../assets/Member_img/profile_example.svg";
 
 const Member = () => {
 
@@ -20,6 +20,7 @@ const Member = () => {
   //       comment: it.comment, //문구
   //       sns_link: it.sns_link //sns link
   //       id:dataId.current++, //ID
+  //       tf:it.tf, //운영진 여부
   //     };
   //   });
   //   setData(initData);
@@ -36,8 +37,11 @@ const Member = () => {
       name: "장하은",
       email: "eileen0228@naver.com",
       comment: "안녕하세요12",
-      sns_link: "https://www.instagram.com/hav_a_gr8_dae/",
-      id:dataId.current++
+      insta_link: "https://www.instagram.com/hav_a_gr8_dae/",
+      git_link:"",
+      linkedin_link:"",
+      id:dataId.current++,
+      tf:true,
     },
     {
       year: "11",
@@ -45,17 +49,24 @@ const Member = () => {
       name: "장하은",
       email: "eileen0228@naver.com",
       comment: "안녕하세요11",
-      sns_link: "https://www.instagram.com/hav_a_gr8_dae/",
-      id:dataId.current++
+      insta_link: "https://www.instagram.com/hav_a_gr8_dae/",
+      git_link:"",
+      linkedin_link:"",
+      id:dataId.current++,
+      tf:true,
+
     },
     {
-      year: "13",
+      year: "11",
       img: "",
       name: "장하은",
       email: "eileen0228@naver.com",
       comment: "안녕하세요13",
-      sns_link: "",
-      id:dataId.current++
+      insta_link: "",
+      git_link:"",
+      linkedin_link:"",
+      id:dataId.current++,
+      tf:false,
     }
   ]
 
@@ -84,7 +95,7 @@ const Member = () => {
           );
         })}
         </div>  
-      <div>
+      <div className="MemberList">
         {listData.map((it)=>(
           <MemberList {...it}/>
         ))}
@@ -93,8 +104,8 @@ const Member = () => {
   );
 };
 
-// Member.defaultProps={
-//   data:{}
-// }
+Member.defaultProps={
+  tf:Boolean,
+}
 
 export default Member;

@@ -3,15 +3,14 @@
     width: 100vw;
     padding-top: 124px;
     padding-bottom: 20px;
-    
-    justify-content: flex-start;
 }
+
 .text{
     padding-right: 180px;
     padding-left: 180px;
 
     font-family: Inter;
-    font-size: 64px;
+    font-size: 60px;
     font-weight: 700;
     line-height: 77px;
     letter-spacing: 0em;
@@ -64,11 +63,12 @@
 /* Member List */
 .MemberList{
     width: 100vw;
-    display: flex;
+    height: auto;
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    padding-left: 80px;
     justify-content: space-around;
 
-    flex-wrap: wrap;
-    flex-direction: row;
     align-content: space-around;
 }
 
@@ -76,11 +76,7 @@
     background-color: #FFFFFF;
     width: 450px;
     height: 150px;
-    top: 519px;
-    left: 70px;
     border-radius: 5px;
-
-    margin: 10px;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
@@ -89,6 +85,8 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
+    margin-bottom: 30px;
 }
 
     /* .MemberList .imgCircle{
@@ -122,21 +120,24 @@
     }
 
     .MemberList .name{
+        display: flex;
+
         font-family: Inter;
         font-size: 20px;
         font-weight: 600;
         line-height: 24px;
         letter-spacing: 0em;
         text-align: left;
-        
+
         padding-bottom: 30px;
         padding-right: 40px;
     }
+
     .MemberList .tf_logo{
         width: 20px;
         height: 20px;
 
-        vertical-align: -3px;
+        vertical-align: top;
         padding-left: 4px;
     }
 
@@ -152,3 +153,150 @@
 
         vertical-align: -8px;
     }
+
+    /* comment */
+    .MemberList .commentBox{
+        display: flex;
+        margin-left: 10px;
+    }
+
+    .MemberList .quote{
+        font-family: League Spartan;
+        font-size: 48px;
+        font-weight: 900;
+        line-height: 25px;
+        color: #3399FF;
+    }
+
+    .MemberList .comment{
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 400;
+
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+
+/*웹 브라우저의 화면이 650px 이하일때*/
+@media (max-width: 650px) {
+    .Member{
+        width: 100vw;
+        padding-top: 40px;
+        padding-bottom: 10px;
+        align-items: center;
+    }
+
+    .text{
+        padding-right: 40px;
+        padding-left: 40px;
+
+        font-family: Inter;
+        font-size: 35px;
+        font-weight: 600;
+    }
+
+    /* 기수 버튼 */
+    .buttonContainer{
+        padding-top: 10px;
+        padding-bottom: 40px;
+    }
+
+    .button{
+        font-size: 23px;
+        font-weight: 700;
+        /* line-height: 39px; */
+    }
+
+    .buttonSelect{
+        font-size: 23px;
+        font-weight: 700;
+        /* line-height: 39px; */
+    }
+
+    /* Member List */
+    .MemberList{
+        /* display: grid; */
+        /* grid-template-columns: 50vw 50vw; */
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+    }
+
+    .MemberList .memberBox{
+        width: 220px;
+        height: 75px;
+        border-radius: 5px;
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 20px;
+    }
+
+    /* Member img */
+    .MemberList .member_img{
+        width: 60px;
+        height: 60px;
+    }
+
+    /* Member info */
+    .MemberList .member_info{
+        justify-content: flex-start;
+
+        padding-left: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-right: 3px;
+    }
+
+    .MemberList .name{
+        font-family: Inter;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 10px;
+        
+        padding-bottom: 10px;
+        padding-right: 0px;
+    }
+
+    .MemberList .tf_logo{
+        width: 15px;
+        height: 15px;
+
+        vertical-align: top;
+        /* padding-left: 2px; */
+        padding-right: 5px;
+    }
+    
+    .MemberList .sns_logo{
+        display: flex;
+    }
+
+    .MemberList .sns_logo_button{
+        width: 13px;
+        height: 13px;
+        vertical-align: 0px;
+    }
+
+    /* comment */
+    .MemberList .commentBox{
+        display: flex;
+        margin-left: 6px;
+    }
+
+    .MemberList .quote{
+        font-size: 33px;
+        font-weight: 900;
+        line-height: 20px;
+    }
+
+    .MemberList .comment{
+        font-size: 12px;
+        font-weight: 400;
+
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+   }

@@ -2,39 +2,43 @@ import git_logo from "..//assets/git_logo.png";
 import insta_logo from "..//assets/insta_logo.png";
 import linkedin_logo from "../assets/linkedin_logo.png";
 import email_logo from "..//assets/email_logo.png";
-import tf_logo from "../assets/Member_img/운영진.png"
+import tf_logo from "../assets/Member_img/운영진.svg"
 
-const MemberList =({year,img,name,email,comment,sns_link,id})=>{
+
+const MemberList =({year,img,name,email,comment,insta_link,linkedin_link,git_link,tf,id})=>{
     return( 
-        <div className="MemberList">
+        // <div className="MemberList">
             <div className="memberBox">
-                {/* <div className="imgCircle"> */}
-                <img className="member_img" alt="img" src={img}/>
-                {/* </div> */}
+                <img className="member_img" alt="" src={img}/>
                 <div className="member_info">
                     <div className="sns_logo">
                         <div className="name">
                             {name} 
-                            <img className="tf_logo" src={tf_logo}/>
+                            {tf&&<img className="tf_logo" src={tf_logo}/>}
                         </div>
                         <a href={email}>
                          <img className="sns_logo_button" alt="sns_logo" src={email_logo} />
                         </a>
-                        <a href="">
+                        <a href={git_link}>
                             <img className="sns_logo_button" alt="sns_logo" src={git_logo} />
                         </a>
-                        <a href={sns_link}>
+                        <a href={insta_link}>
                             <img className="sns_logo_button" alt="sns_logo" src={insta_logo} />
                         </a>
-                        <a href="">
+                        <a href={linkedin_link}>
                             <img className="sns_logo_button" alt="sns_logo" src={linkedin_logo} />
                         </a>
                     </div>
-                    <div className="comment">{comment}</div>
+                    <div className="commentBox">
+                        <div className="quote">"</div>
+                        <div className="comment">{comment}</div>
+                        <div className="quote">"</div>
+                    </div>
+
                 </div>
                 
             </div>
-        </div>
+        // </div>
     );
 }
 
