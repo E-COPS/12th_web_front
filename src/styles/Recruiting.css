@@ -91,6 +91,7 @@ text-shadow: 3px 0px 1px black;
 
 .basicContainer{
     background-color: #f7f5f1;
+    position: relative;
     justify-content: center;
     display: flex;
     min-height: 100vh;
@@ -154,7 +155,7 @@ text-align: center;
 
 }
 
-.button:hover{
+.applyButton:hover{
     transform:scale(1.2);
     cursor: pointer;
 }
@@ -204,6 +205,8 @@ color: #000000;
 
     text-align: center;
     justify-content: center;
+
+
 }
 
 .questionToggle{
@@ -220,6 +223,9 @@ background: #F0EEEB;
 border-radius: 5px;
 border:none;
 
+align-items: center;
+display: flex;
+
 
 }
 
@@ -234,22 +240,25 @@ border:none;
     background: #FFFFFF;
     border-radius: 5px;
     border:none;
+
+    align-items: center;
+    display: flex;
     
     
 }
 
 .answerToggle{
 /*answeBox */
+margin:auto;
 
-position: relative;
 margin-bottom: 3vh;
-margin-top:72px;
-right:8px;
 width: 86vw;
 height: 178px;
 
 
 background: #F0EEEB;
+
+display: flex;
 
 }
 
@@ -257,6 +266,56 @@ background: #F0EEEB;
     
     font-size:16px;
     font-family: 'Inter';
+}
+
+.recruiting_up{
+    
+}
+
+.basicContainer2{
+
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+  
+    background: #F0EEEB;
+    min-height: 100vh;
+    margin-bottom: 10vh;
+
+
+}
+
+.grayText{
+    /* 더 궁금한 내용이나 문의 사항이 있으신가요? */
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 4.3vw;
+
+
+color: #A9A7A3;
+
+position: absolute;
+top:20vh;
+
+}
+
+.recruiting_check{
+    position:relative;
+    top:10vh;
+
+    width:40vw;         
+}
+
+.recruiting_ecops_img{
+    position: relative;
+
+    top:30vh;
+    left: 15vw;;
+
+    width:22vw;
 }
 
 
