@@ -1,95 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&display=swap");
 
-.Member{
-    width: 100vw;
-    padding-top: 124px;
-    padding-bottom: 20px;
+.Member {
+  width: 100vw;
+  padding-top: 124px;
+  padding-bottom: 20px;
 }
 
-.text{
-    padding-right: 180px;
-    padding-left: 180px;
+.text {
+  padding-right: 180px;
+  padding-left: 180px;
 
-    font-family: Inter;
-    font-size: 60px;
-    font-weight: 700;
-    line-height: 77px;
-    letter-spacing: 0em;
-    text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 77px;
+  letter-spacing: 0em;
+  text-align: center;
 }
 
 /* 기수 버튼 */
-.buttonContainer{
-    display: flex;
-    justify-content: center;
+.buttonContainer {
+  display: flex;
+  justify-content: center;
 
-    padding-top: 20px;
-    padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 
-.button{
-    cursor: pointer;
-    background-color: transparent;
-    border: transparent;
+.button {
+  cursor: pointer;
+  background-color: transparent;
+  border: transparent;
 
-    font-family: Inter;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 39px;
-    letter-spacing: 0em;
-    text-align: left;
-    transition: color 0.2s ease-in-out;
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: 0em;
+  text-align: left;
+  transition: color 0.2s ease-in-out;
 }
 
-.buttonSelect{
-    cursor: pointer;
-    background-color: transparent;
-    border: transparent;
+.buttonSelect {
+  cursor: pointer;
+  background-color: transparent;
+  border: transparent;
 
-    font-family: Inter;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 39px;
-    letter-spacing: 0em;
-    text-align: left;
-    transition: color 0.2s ease-in-out;
-    color: #3399FF;
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: 0em;
+  text-align: left;
+  transition: color 0.2s ease-in-out;
+  color: #3399ff;
 }
 
-.button:hover{
-    color: #3399FF;
+.button:hover {
+  color: #3399ff;
 }
-
 
 /* Member List */
-.MemberList{
-    width: 100vw;
-    height: auto;
-    display: grid;
-    grid-template-columns: 50vw 50vw;
-    padding-left: 80px;
-    justify-content: space-around;
+.MemberList {
+  width: 100vw;
+  height: auto;
+  /* display: grid; */
+  /* grid-template-columns: 50vw 50vw; */
+  /* padding-left: 80px; */
+  justify-content: space-around;
+  align-content: space-around;
 
-    align-content: space-around;
+  display: flex;
+  align-items: center;
 }
 
-.MemberList .memberBox{
-    background-color: #FFFFFF;
-    width: 450px;
-    height: 150px;
-    border-radius: 5px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
-    margin-bottom: 30px;
+.Member_grid {
+  display: grid;
+  column-gap: 16px;
+  row-gap: 40px;
 }
 
-    /* .MemberList .imgCircle{
+@media (max-width: 999px) {
+  .Member_grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .Member_grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.MemberList .memberBox {
+  background-color: #ffffff;
+  width: 450px;
+  height: 150px;
+  border-radius: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin-bottom: 30px;
+}
+
+/* .MemberList .imgCircle{
         width: 40px;
         height: 40px;
         top: 553px;
@@ -99,204 +120,203 @@
         background: #F0EEEB;
     } */
 
-    /* Member img */
-    .MemberList .member_img{
-        width: 120px;
-        height: 120px;
+/* Member img */
+.MemberList .member_img {
+  width: 120px;
+  height: 120px;
 
-        border-radius: 100%;
-        background: #F0EEEB;
-        color: #F0EEEB;
-    }
+  border-radius: 100%;
+  background: #f0eeeb;
+  color: #f0eeeb;
+}
 
-    /* Member info */
-    .MemberList .member_info{
-        justify-content: flex-start;
+/* Member info */
+.MemberList .member_info {
+  justify-content: flex-start;
 
-        padding-left: 20px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-right: 10px;
-    }
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
 
-    .MemberList .name{
-        display: flex;
+.MemberList .name {
+  display: flex;
 
-        font-family: Inter;
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 24px;
-        letter-spacing: 0em;
-        text-align: left;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
 
-        padding-bottom: 30px;
-        padding-right: 40px;
-    }
+  padding-bottom: 30px;
+  padding-right: 40px;
+}
 
-    .MemberList .tf_logo{
-        width: 20px;
-        height: 20px;
+.MemberList .tf_logo {
+  width: 20px;
+  height: 20px;
 
-        vertical-align: top;
-        padding-left: 4px;
-    }
+  vertical-align: top;
+  padding-left: 4px;
+}
 
-    .MemberList .sns_logo{
-        display: flex;
-    }
+.MemberList .sns_logo {
+  display: flex;
+}
 
-    .MemberList .sns_logo_button{
-        cursor: pointer;
+.MemberList .sns_logo_button {
+  cursor: pointer;
 
-        width: 20px;
-        height: 20px;
+  width: 20px;
+  height: 20px;
 
-        vertical-align: -8px;
-    }
+  vertical-align: -8px;
+}
 
-    /* comment */
-    .MemberList .commentBox{
-        display: flex;
-        margin-left: 10px;
-    }
+/* comment */
+.MemberList .commentBox {
+  display: flex;
+  margin-left: 10px;
+}
 
-    .MemberList .quote{
-        font-family: League Spartan;
-        font-size: 48px;
-        font-weight: 900;
-        line-height: 25px;
-        color: #3399FF;
-    }
+.MemberList .quote {
+  font-family: "League Spartan", sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 25px;
+  color: #3399ff;
+}
 
-    .MemberList .comment{
-        font-family: Inter;
-        font-size: 16px;
-        font-weight: 400;
+.MemberList .comment {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
+  padding-left: 10px;
+  padding-right: 10px;
+}
 
 /*웹 브라우저의 화면이 650px 이하일때*/
 @media (max-width: 650px) {
-    .Member{
-        width: 100vw;
-        padding-top: 40px;
-        padding-bottom: 10px;
-        align-items: center;
-    }
+  .Member {
+    width: 100vw;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    align-items: center;
+  }
 
-    .text{
-        padding-right: 40px;
-        padding-left: 40px;
+  .text {
+    padding-right: 40px;
+    padding-left: 40px;
 
-        font-family: Inter;
-        font-size: 35px;
-        font-weight: 600;
-    }
+    font-family: "Inter", sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+  }
 
-    /* 기수 버튼 */
-    .buttonContainer{
-        padding-top: 10px;
-        padding-bottom: 40px;
-    }
+  /* 기수 버튼 */
+  .buttonContainer {
+    padding-top: 10px;
+    padding-bottom: 40px;
+  }
 
-    .button{
-        font-size: 23px;
-        font-weight: 700;
-        /* line-height: 39px; */
-    }
+  .button {
+    font-size: 23px;
+    font-weight: 700;
+    /* line-height: 39px; */
+  }
 
-    .buttonSelect{
-        font-size: 23px;
-        font-weight: 700;
-        /* line-height: 39px; */
-    }
+  .buttonSelect {
+    font-size: 23px;
+    font-weight: 700;
+    /* line-height: 39px; */
+  }
 
-    /* Member List */
-    .MemberList{
-        /* display: grid; */
-        /* grid-template-columns: 50vw 50vw; */
-        display: flex;
-        justify-content: start;
-        flex-wrap: wrap;
-    }
+  /* Member List */
+  .MemberList {
+    /* display: grid; */
+    /* grid-template-columns: 50vw 50vw; */
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
 
-    .MemberList .memberBox{
-        width: 220px;
-        height: 75px;
-        border-radius: 5px;
+  .MemberList .memberBox {
+    width: 220px;
+    height: 75px;
+    border-radius: 5px;
 
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 15px;
-        padding-right: 15px;
-        margin-bottom: 20px;
-    }
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 20px;
+  }
 
-    /* Member img */
-    .MemberList .member_img{
-        width: 60px;
-        height: 60px;
-    }
+  /* Member img */
+  .MemberList .member_img {
+    width: 60px;
+    height: 60px;
+  }
 
-    /* Member info */
-    .MemberList .member_info{
-        justify-content: flex-start;
+  /* Member info */
+  .MemberList .member_info {
+    justify-content: flex-start;
 
-        padding-left: 10px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-right: 3px;
-    }
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 3px;
+  }
 
-    .MemberList .name{
-        font-family: Inter;
-        font-size: 15px;
-        font-weight: 600;
-        line-height: 10px;
-        
-        padding-bottom: 10px;
-        padding-right: 0px;
-    }
+  .MemberList .name {
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 10px;
 
-    .MemberList .tf_logo{
-        width: 15px;
-        height: 15px;
+    padding-bottom: 10px;
+    padding-right: 0px;
+  }
 
-        vertical-align: top;
-        /* padding-left: 2px; */
-        padding-right: 5px;
-    }
-    
-    .MemberList .sns_logo{
-        display: flex;
-    }
+  .MemberList .tf_logo {
+    width: 15px;
+    height: 15px;
 
-    .MemberList .sns_logo_button{
-        width: 13px;
-        height: 13px;
-        vertical-align: 0px;
-    }
+    vertical-align: top;
+    /* padding-left: 2px; */
+    padding-right: 5px;
+  }
 
-    /* comment */
-    .MemberList .commentBox{
-        display: flex;
-        margin-left: 6px;
-    }
+  .MemberList .sns_logo {
+    display: flex;
+  }
 
-    .MemberList .quote{
-        font-size: 33px;
-        font-weight: 900;
-        line-height: 20px;
-    }
+  .MemberList .sns_logo_button {
+    width: 13px;
+    height: 13px;
+    vertical-align: 0px;
+  }
 
-    .MemberList .comment{
-        font-size: 12px;
-        font-weight: 400;
+  /* comment */
+  .MemberList .commentBox {
+    display: flex;
+    margin-left: 6px;
+  }
 
-        padding-left: 6px;
-        padding-right: 6px;
-    }
-   }
+  .MemberList .quote {
+    font-size: 33px;
+    font-weight: 900;
+    line-height: 20px;
+  }
+
+  .MemberList .comment {
+    font-size: 12px;
+    font-weight: 400;
+
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+}
