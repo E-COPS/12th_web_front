@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import { useParams } from "react-router-dom";
 import MemberList from "./MemberList";
 import profile_example from "../assets/Member_img/profile_example.svg";
 
@@ -70,7 +69,7 @@ const Member = () => {
 
   const [listData, setListData] = useState([]);
 
-  const [isSelect, setIsSelect] = useState("");
+  const [isSelect, setIsSelect] = useState("13");
   const handleClick = (value) => {
     setListData(data.filter((it) => it.year === value));
     setIsSelect(value);
