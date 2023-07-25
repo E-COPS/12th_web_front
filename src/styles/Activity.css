@@ -46,7 +46,7 @@
   justify-content: center;
 }
 
-@media (max-width: 750px) {
+/* @media (max-width: 750px) {
   .Activity_grid {
     grid-template-columns: 1fr;
   }
@@ -61,6 +61,18 @@
 @media (min-width: 1000px) {
   .Activity_grid {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+} */
+
+@media (max-width: 999px) {
+  .Activity_grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .Activity_grid {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
