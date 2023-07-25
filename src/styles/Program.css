@@ -1,0 +1,158 @@
+.basicContainer{
+    background-color: #f7f5f1;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    min-height: 100vh;
+    padding-bottom:10vh;
+}
+
+.boldText{
+    /* Sessions */
+
+position: absolute;
+top:30vh;
+left:6vw;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 900;
+font-size: 64px;
+line-height: 77px;
+
+color: #000000;
+
+
+}
+
+.smallText{
+position: absolute;
+left: 6vw;
+top: 45vh;
+
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 23px;
+line-height: 29px;
+
+color: #000000;
+
+
+}
+
+.whiteBox{
+    /* Subtract */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 44vw;
+height: 40.5vh;
+
+left:6vw;
+top: 60vh;
+
+background: #FFFFFF;
+border: 1px solid #3399FF;
+
+text-align: center;
+
+}
+
+.program_beginner_img{
+    padding-top: 3vh;
+    padding-right: 30vw;
+    width: 13.7vw;    
+}
+
+.black_bar{
+
+position:relative;
+bottom:29%;
+
+width:40vw;
+height: 1.1vh;
+background: #000000;
+border-radius: 10px;
+
+
+}
+
+.bold_small_text{
+    /* Beginner Track */
+
+position: relative;
+
+bottom:30%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 900;
+font-size:2.5vw;
+
+color: #000000;
+
+}
+
+.button{
+    /* 자세히 보기 → */
+
+position:relative;
+top:-8vh;
+left:16.3vw;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 19px;
+
+color: #3399FF;
+
+
+}
+
+.grayBox{
+
+box-sizing: border-box;
+
+position: absolute;
+width: 44vw;
+height: 40.5vh;
+left:49.9vw;
+top: 60vh;
+
+background: #F0EEEB;
+border: 1px solid #3399FF;
+
+}
+
+.button2{
+    position:relative;
+    top:-2vh;
+    left:33vw;
+
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    
+    color: #3399FF; 
+}
+
+.program_challenger_img{
+    padding-top: 2vh;
+    width: 14w;
+}
+
+.imgContainer{
+   margin-top:65vh;
+   padding-bottom: 20vh;
+}
+
+.program_team_logo{
+   margin:1vw;
+}
