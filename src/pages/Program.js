@@ -10,6 +10,8 @@ const Program = () => {
     navigate("/", { replace: true });
   };*/
 
+  const navigate = useNavigate();
+
   return (
   <div className="Program">
     <div className="Session">
@@ -22,12 +24,12 @@ const Program = () => {
           <img className="program_beginner_img" src={program_beginner_img}/>
           <text className="bold_small_text" style={{paddingLeft:'18vw'}}>BEGINNER TRACK</text>
           <button className="black_bar"/>
-          <button className="button1">자세히 보기 &rarr;</button>
+          <button className="button1" onClick={()=>{navigate("./beginner")}}>자세히 보기 &rarr;</button>
         </div>
         <div className="grayBox">
           <img className="program_challenger_img" src={program_challenger_img}/>
           <text className="bold_small_text" style={{bottom:'9vh'}}>CHALLENGER TRACK</text>
-          <button className="button2" >자세히 보기 &rarr;</button>
+          <button className="button2" onClick={()=>{navigate("./challenger")}}>자세히 보기 &rarr;</button>
         </div>
       </div>
     </div>

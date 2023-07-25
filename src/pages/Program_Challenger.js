@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import ProgramList from "../components/ProgramList";
 import activity_example_img from "../assets/activity_example_img.svg";
 
@@ -29,8 +29,11 @@ const Challenger = () => {
   ];
 
   const [programData, setProgramData] = useState([]);
-
   const [classData, setClassData] = useState("12");
+
+  useEffect(()=>{
+    setProgramData(programData.filter((it)=>it.track=="challenger"));
+  })
 
   const handleClick = (value) => {
     setProgramData(program_data.filter((it) => it.year === value));
