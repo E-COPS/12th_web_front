@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+
 .basicContainer{
     background-color: #f7f5f1;
     position: relative;
@@ -57,27 +59,16 @@ top: 60vh;
 background: #FFFFFF;
 border: 1px solid #3399FF;
 
+
 text-align: center;
 
 }
 
 .program_beginner_img{
-    padding-top: 3vh;
-    padding-right: 30vw;
-    width: 13.7vw;    
-}
 
-.black_bar{
-
-position:relative;
-bottom:29%;
-
-width:40vw;
-height: 1.1vh;
-background: #000000;
-border-radius: 10px;
-
-
+    margin-top:3vh;
+    margin-right:1vw;
+    width: 40vw;    
 }
 
 .bold_small_text{
@@ -100,13 +91,16 @@ color: #000000;
     /* 자세히 보기 → */
 
 position:relative;
-top:-8vh;
-left:16.3vw;
+left:30vh;
+
 font-family: 'Inter';
 font-style: normal;
 font-weight: 800;
 font-size: 16px;
 line-height: 19px;
+
+border: none;
+background-color: white;
 
 color: #3399FF;
 
@@ -144,14 +138,30 @@ border: 1px solid #3399FF;
 }
 
 .program_challenger_img{
-    padding-top: 2vh;
-    width: 14w;
+    padding-top: 3vh;
+    width: 40vw;
 }
 
-.imgContainer{
+.img_grid{
    margin-top:65vh;
    padding-bottom: 20vh;
+
+   display: grid;
+   column-gap: 16px;
+   row-gap: 40px;
 }
+
+@media (max-width: 999px) {
+    .img_grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (min-width: 1000px) {
+    .img_grid {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
 
 .program_team_logo{
    margin:1vw;

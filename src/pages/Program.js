@@ -6,10 +6,6 @@ import '../styles/Program.css'
 
 const Program = () => {
 
- /* const clickLogo = () => {
-    navigate("/", { replace: true });
-  };*/
-
   const navigate = useNavigate();
 
   return (
@@ -22,13 +18,10 @@ const Program = () => {
         </text>
         <div className="whiteBox">
           <img className="program_beginner_img" src={program_beginner_img}/>
-          <text className="bold_small_text" style={{paddingLeft:'18vw'}}>BEGINNER TRACK</text>
-          <button className="black_bar"/>
           <button className="button1" onClick={()=>{navigate("./beginner")}}>자세히 보기 &rarr;</button>
         </div>
         <div className="grayBox">
           <img className="program_challenger_img" src={program_challenger_img}/>
-          <text className="bold_small_text" style={{bottom:'9vh'}}>CHALLENGER TRACK</text>
           <button className="button2" onClick={()=>{navigate("./challenger")}}>자세히 보기 &rarr;</button>
         </div>
       </div>
@@ -39,7 +32,7 @@ const Program = () => {
         <text className="smallText">방학 세션은 Team을 이루어 진행됩니다.<br/>
         심화학습을 원하는 Team에 들어가 자신의 능력을 뽐내보세요!
         </text>
-        <div className="imgContainer">
+        <div className="img_grid">
           <img className="program_team_logo" src={program_team_logo}/>
           <img className="program_team_logo" src={program_team_logo}/>
           <img className="program_team_logo" src={program_team_logo}/>
