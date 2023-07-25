@@ -2,6 +2,7 @@ import program_team_logo from "../assets/Program_img/program_team_logo.svg";
 import program_beginner_img from "../assets/Program_img/program_beginner_img.svg";
 import program_challenger_img from "../assets/Program_img/program_challenger_img.svg";
 import { useNavigate } from "react-router-dom";
+import '../styles/Program.css'
 
 const Program = () => {
 
@@ -21,7 +22,7 @@ const Program = () => {
           <img className="program_beginner_img" src={program_beginner_img}/>
           <text className="bold_small_text" style={{paddingLeft:'18vw'}}>BEGINNER TRACK</text>
           <button className="black_bar"/>
-          <button className="button">자세히 보기 &rarr;</button>
+          <button className="button1">자세히 보기 &rarr;</button>
         </div>
         <div className="grayBox">
           <img className="program_challenger_img" src={program_challenger_img}/>

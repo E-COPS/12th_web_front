@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import MemberList from "./MemberList";
 import profile_example from "../assets/Member_img/profile_example.svg";
+import '../styles/Member.css'
 
 const Member = () => {
   //const {id}=useParams();

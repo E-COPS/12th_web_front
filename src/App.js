@@ -13,6 +13,8 @@ import Activity from "./pages/Activity";
 import Member from "./pages/Member";
 import Program from "./pages/Program";
 import Recruiting from "./pages/Recruiting";
+import Beginner from "./pages/Program_Beginner";
+import Challenger from "./pages/Program_Challenger";
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
             <Route path="/member" element={<Member />} />
             <Route path="/program" element={<Program />} />
             <Route path="/recruiting" element={<Recruiting />} />
+            <Route path="/program/beginner" element={<Beginner />} />
+            <Route path="/program/challenger" element={<Challenger />} />
           </Routes>
         </div>
         <MyFooter />

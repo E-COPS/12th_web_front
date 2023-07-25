@@ -3,7 +3,7 @@ import insta_logo from "..//assets/insta_logo.png";
 import linkedin_logo from "../assets/linkedin_logo.png";
 import email_logo from "..//assets/email_logo.png";
 import tf_logo from "../assets/Member_img/운영진.svg"
-
+import '../styles/Member.css'
 
 const MemberList =({year,img,name,email,comment,insta_link,linkedin_link,git_link,tf,id})=>{
     return( 
