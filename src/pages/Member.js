@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import MemberList from "./MemberList";
 import profile_example from "../assets/Member_img/profile_example.svg";
-import '../styles/Member.css'
+import "../styles/Member.css";
 
 const Member = () => {
   //const {id}=useParams();
@@ -71,6 +71,12 @@ const Member = () => {
   const [listData, setListData] = useState([]);
 
   const [isSelect, setIsSelect] = useState("13");
+
+  //초기 화면 11기부터 나오도록 설정
+  useEffect(() => {
+    handleClick("11");
+  }, []);
+
   const handleClick = (value) => {
     setListData(data.filter((it) => it.year === value));
     setIsSelect(value);
