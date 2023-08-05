@@ -5,10 +5,14 @@ import recruiting_process from "..//assets/Recruiting_img/recruiting_process.svg
 import recruiting_up from "..//assets/Recruiting_img/recruituing_up.svg";
 import recruiting_check from "../assets/Recruiting_img/recruiting_check.svg";
 import recruiting_ecops_img from "../assets/Recruiting_img/recruiting_ecops_img.svg";
+import toggle_down from "../assets/Recruiting_img/toggle_down.svg";
+import toggle_up from "../assets/Recruiting_img/toggle_up.svg";
 
 const Recruiting = () => {
   const [IsCheck, setCheck] = useState([false, false, false]); //토글 구현
   const [IsColor, setColor] = useState([false, false, false]); //토글 색
+  const [IsSelect, setSelect]=useState([false, false, false]); //토글 옆 삼각형
+
 
   function handleClick(index) {
     setColor((prevColor) => {
@@ -23,6 +27,12 @@ const Recruiting = () => {
       const updateCheck = [...prevCheck];
       updateCheck[index] = !updateCheck[index];
       return updateCheck;
+    });
+
+    setSelect((prevSelect) => {
+      const updateSelect = [...prevSelect];
+      updateSelect[index] = !updateSelect[index];
+      return updateSelect;
     });
 
     /* return (
@@ -135,6 +145,9 @@ const Recruiting = () => {
                 Q: 비기너로 지원하고 싶은데, 보안관련 경험이 하나도 없어요.
                 지원해도 괜찮을까요?
               </text>
+              <div className="toggle_updown">
+                {IsSelect[0]?<img src={toggle_down}/>:<img src={toggle_up}/>}
+              </div>
             </button>
             {IsCheck[0] ? (
               <div>
@@ -152,6 +165,9 @@ const Recruiting = () => {
               <text className="black_text5">
                 Q: 챌린저 분야는 항상 동일한가요?
               </text>
+              <div className="toggle_updown">
+                {IsSelect[1]?<img src={toggle_down}/>:<img src={toggle_up}/>}
+              </div>
             </button>
             {IsCheck[1] ? (
               <div>
@@ -169,6 +185,9 @@ const Recruiting = () => {
               <text className="black_text5">
                 필수 활동 기간이 어떻게 되나요?
               </text>
+              <div className="toggle_updown">
+                {IsSelect[2]?<img src={toggle_down}/>:<img src={toggle_up}/>}
+              </div>
             </button>
             {IsCheck[2] ? <CheckToggle2 /> : null}
           </div>

@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import ProgramList from "../components/ProgramList";
 import activity_example_img from "../assets/activity_example_img.svg";
 import { useEffect } from "react";
+import "../styles/Program_1.css"
 
 const Beginner = () => {
   const programId = useRef(0);
@@ -19,7 +20,7 @@ const Beginner = () => {
     },
     {
       year: "12",
-      track: "challenger",
+      track: "beginner",
       img: activity_example_img,
       project_name: "프로젝트 1",
       project_description: "12기 프로젝트 1입니다.",
@@ -27,14 +28,27 @@ const Beginner = () => {
       git_link: "",
       id: programId.current++,
     },
+    {
+        year: "12",
+        track: "beginner",
+        img: activity_example_img,
+        project_name: "프로젝트 1",
+        project_description: "12기 프로젝트 1입니다.",
+        insta_link: "",
+        git_link: "",
+        id: programId.current++,
+      },
   ];
 
   const [programData, setProgramData] = useState([]);
   const [classData, setClassData] = useState("12");
 
   useEffect(()=>{
+    handleClick("11");
+  },[]);
+  useEffect(()=>{
     setProgramData(programData.filter((it)=>it.track=="beginner"));
-  })
+  },[]);
 
   const handleClick = (value) => {
     setProgramData(program_data.filter((it) => it.year === value));

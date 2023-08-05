@@ -229,8 +229,13 @@ display: flex;
 
 }
 
+.toggle_updown{
+    margin-left: auto;
+    padding-right: 25px;
+}
 
 .questionToggle2{
+    position: relative;
     
     box-sizing: border-box;
     

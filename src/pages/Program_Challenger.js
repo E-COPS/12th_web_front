@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import ProgramList from "../components/ProgramList";
 import activity_example_img from "../assets/activity_example_img.svg";
+import "../styles/Program_1.css"
 
 const Challenger = () => {
   const programId = useRef(0);
@@ -33,7 +34,8 @@ const Challenger = () => {
 
   useEffect(()=>{
     setProgramData(programData.filter((it)=>it.track=="challenger"));
-  })
+    handleClick("11");
+  },[]);
 
   const handleClick = (value) => {
     setProgramData(program_data.filter((it) => it.year === value));
