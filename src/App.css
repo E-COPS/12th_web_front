@@ -24,7 +24,7 @@ body {
 
 /* MyHeader */
 
-header {
+.header {
   padding-top: 20px;
   padding-bottom: 20px;
   justify-content: space-between;
@@ -61,6 +61,50 @@ header text {
   font-weight: 400;
 
   cursor: pointer;
+}
+
+/* Hide the links inside the hamburger menu */
+header #myLinks {
+  display: none;
+  border-bottom: 1px solid #a9a7a3;
+}
+
+header #myLinks text {
+  display: none;
+}
+
+header #myLinks text:hover {
+  background-color: #e2e2e2;
+  color: black;
+}
+
+header .nav_hamburger {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  header .nav_hamburger {
+    display: block;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  header text {
+    display: none;
+  }
+
+  header #myLinks text {
+    color: black;
+    font-size: 16px;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 5vw;
+    padding-bottom: 1vw;
+  }
 }
 
 /* Footer */
@@ -132,6 +176,12 @@ footer .sns_logo {
   height: 40px;
 }
 
+@media (max-width: 800px) {
+  footer text {
+    display: none;
+  }
+}
+
 /* Home */
 
 .Home {
@@ -191,6 +241,10 @@ footer .sns_logo {
   padding-top: 150px;
 }
 
+.home_description_2_text_alt {
+  display: none;
+}
+
 .home_description_2_intro {
   position: relative;
   font-weight: bold;
@@ -223,6 +277,7 @@ footer .sns_logo {
 .ecops_yellow_line {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 5px;
@@ -236,6 +291,41 @@ footer .sns_logo {
   height: 3px;
   margin-top: 8px;
   background-color: #3399ff;
+}
+
+@media (max-width: 800px) {
+  .yellow_line_3 {
+    display: none;
+  }
+  .yellow_line_4 {
+    display: none;
+  }
+  .home_ewha_logo {
+    width: 35vw;
+  }
+  .home_description_2_text {
+    display: none;
+  }
+  .home_description_2_text_alt {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2vw;
+
+    padding-top: 150px;
+  }
+
+  .home_ecops_logo {
+    width: 10vw;
+  }
+}
+
+@media (max-width: 650px) {
+  .ecops_yellow_line {
+    display: none;
+  }
 }
 
 /* Recruiting */

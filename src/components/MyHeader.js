@@ -20,12 +20,32 @@ const MyHeader = () => {
     navigate("/recruiting", { replace: true });
   };
 
+  function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+
   return (
     <header>
-      <div className="nav_logo">
-        <img alt="logo" className="logo" src={logo} onClick={clickLogo}></img>
+      <div className="header">
+        <div className="nav_logo">
+          <img alt="logo" className="logo" src={logo} onClick={clickLogo}></img>
+        </div>
+        <div className="nav">
+          <text onClick={clickProgram}>PROGRAM</text>
+          <text onClick={clickMember}>MEMBER</text>
+          <text onClick={clickActivity}>ACTIVITY</text>
+          <text onClick={clickRecruitment}>RECRUITMENT</text>
+          <button className="nav_hamburger" onClick={myFunction}>
+            &#9776;
+          </button>
+        </div>
       </div>
-      <div className="nav">
+      <div id="myLinks">
         <text onClick={clickProgram}>PROGRAM</text>
         <text onClick={clickMember}>MEMBER</text>
         <text onClick={clickActivity}>ACTIVITY</text>
