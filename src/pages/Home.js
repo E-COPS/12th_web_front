@@ -24,6 +24,24 @@ const Home = () => {
         </text>
         <text>and anyone who has a passion for security can apply</text>
       </div>
+
+      <div className="home_description_alt">
+        <img src={ecops_logo} alt="ecops_log" className="home_ecops_logo"></img>
+        <text>
+          <text className="bold">E-COPS</text>는 보안을 공부하고 싶은 학생이라면
+        </text>
+        <text>누구나 참여할 수 있는</text>
+        <text className="home_description_text_kr">
+          이화여자대학교 교내 동아리입니다.
+        </text>
+        <text>
+          <text className="bold">E-COPS</text> is a cyber security club
+        </text>
+        <text>at EWHA Woman's University</text>
+        <text>and anyone who has a passion for security</text>
+        <text>can apply</text>
+      </div>
+
       <div className="home_description_2">
         <img src={ewha_logo} alt="ewha_logo" className="home_ewha_logo"></img>
         <div className="home_description_2_text">
@@ -50,10 +68,8 @@ const Home = () => {
         <div className="home_description_2_text_alt">
           <h2 className="home_description_2_intro">E-COPS는 이런 동아리야!</h2>
           <text>E-COPS(EWHA-CONTROL OF PROGRAM SECURITY)는</text>
-          <text>
-            이화여대 학생이라면 누구나 참여할 수 있는 이화여자대학교 대표 사이버
-            보안 동아리로,
-          </text>
+          <text>이화여대 학생이라면 누구나 참여할 수 있는</text>
+          <text> 대표 사이버 보안 동아리로,</text>
           <text>
             함께 정보 보안을 공부하며 보안 전문가로 성장해 나가는 것을 목표로
             합니다.
