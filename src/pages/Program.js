@@ -16,6 +16,7 @@ const Program = () => {
         <text className="smallText">E-COPS의 정규 세션은 Beginner Track과 Challenger Track으로 나누어서 이루어집니다.<br/>
             자유롭게 선택해 보세요. 
         </text>
+        <div className="box_grid">
         <div className="whiteBox">
           <img className="program_beginner_img" src={program_beginner_img}/>
           <button className="button1" onClick={()=>{navigate("./beginner")}}>자세히 보기 &rarr;</button>
@@ -23,6 +24,7 @@ const Program = () => {
         <div className="grayBox">
           <img className="program_challenger_img" src={program_challenger_img}/>
           <button className="button2" onClick={()=>{navigate("./challenger")}}>자세히 보기 &rarr;</button>
+        </div>
         </div>
       </div>
     </div>

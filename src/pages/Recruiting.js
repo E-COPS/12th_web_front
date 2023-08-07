@@ -146,7 +146,7 @@ const Recruiting = () => {
                 지원해도 괜찮을까요?
               </text>
               <div className="toggle_updown">
-                {IsSelect[0]?<img src={toggle_down}/>:<img src={toggle_up}/>}
+                {IsSelect[0]?<img src={toggle_up}/>:<img src={toggle_down}/>}
               </div>
             </button>
             {IsCheck[0] ? (
@@ -166,7 +166,7 @@ const Recruiting = () => {
                 Q: 챌린저 분야는 항상 동일한가요?
               </text>
               <div className="toggle_updown">
-                {IsSelect[1]?<img src={toggle_down}/>:<img src={toggle_up}/>}
+                {IsSelect[1]?<img src={toggle_up}/>:<img src={toggle_down}/>}
               </div>
             </button>
             {IsCheck[1] ? (
@@ -183,10 +183,10 @@ const Recruiting = () => {
               }}
             >
               <text className="black_text5">
-                필수 활동 기간이 어떻게 되나요?
+                Q: 필수 활동 기간이 어떻게 되나요?
               </text>
               <div className="toggle_updown">
-                {IsSelect[2]?<img src={toggle_down}/>:<img src={toggle_up}/>}
+                {IsSelect[2]?<img src={toggle_up}/>:<img src={toggle_down}/>}
               </div>
             </button>
             {IsCheck[2] ? <CheckToggle2 /> : null}
