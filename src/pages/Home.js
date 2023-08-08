@@ -70,17 +70,13 @@ const Home = () => {
           <text>E-COPS(EWHA-CONTROL OF PROGRAM SECURITY)는</text>
           <text>이화여대 학생이라면 누구나 참여할 수 있는</text>
           <text> 대표 사이버 보안 동아리로,</text>
-          <text>
-            함께 정보 보안을 공부하며 보안 전문가로 성장해 나가는 것을 목표로
-            합니다.
-          </text>
+          <text>함께 정보 보안을 공부하며</text>
+          <text>보안 전문가로 성장해 나가는 것을 목표로 합니다.</text>
           <text className="home_description_padding">
             경력 개발 센터 우수 동아리에 이름을 올렸으며,
           </text>
-          <text>
-            현재 인재 개발원 커리어클럽, 보안 엽합 IncogNITO, SUA, hspace에
-            소속되어
-          </text>
+          <text>현재 인재 개발원 커리어클럽, 보안 엽합 IncogNITO,</text>
+          <text>SUA, hspace에 소속되어</text>
           <text>내/외부적으로 활발하게 활동을 이어 나가고 있습니다.</text>
         </div>
         <div className="home_description_partner">

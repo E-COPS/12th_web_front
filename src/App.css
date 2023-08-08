@@ -316,7 +316,7 @@ footer .sns_logo {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 2.6vw;
+    font-size: 3vw;
 
     padding-top: 150px;
   }
@@ -337,6 +337,10 @@ footer .sns_logo {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  .home_description_2_intro {
+    font-size: large;
   }
 }
 
