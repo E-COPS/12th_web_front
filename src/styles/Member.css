@@ -83,11 +83,6 @@
   row-gap: 40px;
 }
 
-@media (max-width: 999px) {
-  .Member_grid {
-    grid-template-columns: 1fr;
-  }
-}
 
 @media (min-width: 1000px) {
   .Member_grid {
@@ -201,7 +196,10 @@
 }
 
 /*웹 브라우저의 화면이 650px 이하일때*/
-@media (max-width: 650px) {
+@media (max-width: 999px) {
+  .Member_grid {
+    grid-template-columns: 1fr;
+  }
   .Member {
     width: 100vw;
     padding-top: 40px;
@@ -241,13 +239,13 @@
     /* display: grid; */
     /* grid-template-columns: 50vw 50vw; */
     display: flex;
-    justify-content: start;
+    justify-content: center;
     flex-wrap: wrap;
   }
 
   .MemberList .memberBox {
-    width: 220px;
-    height: 75px;
+    width: 300px;
+    height: 100px;
     border-radius: 5px;
 
     padding-top: 10px;
@@ -290,10 +288,16 @@
     vertical-align: top;
     /* padding-left: 2px; */
     padding-right: 5px;
+    /* margin-right: 15px; */
   }
 
   .MemberList .sns_logo {
     display: flex;
+    margin-left: 10px;
+  }
+
+  .MemberList .email_logo{
+    margin-left: 12px;
   }
 
   .MemberList .sns_logo_button {
@@ -305,7 +309,8 @@
   /* comment */
   .MemberList .commentBox {
     display: flex;
-    margin-left: 6px;
+    margin-left: 10px;
+    margin-top: 8px;
   }
 
   .MemberList .quote {

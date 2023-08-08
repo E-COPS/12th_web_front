@@ -16,7 +16,7 @@ const MemberList =({year,img,name,email,comment,insta_link,linkedin_link,git_lin
                             {name} 
                             {tf&&<img className="tf_logo" src={tf_logo}/>}
                         </div>
-                        <a href={email}>
+                        <a className="email_logo" href={email}>
                          <img className="sns_logo_button" alt="sns_logo" src={email_logo} />
                         </a>
                         <a href={git_link}>
