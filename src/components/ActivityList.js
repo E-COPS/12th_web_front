@@ -1,4 +1,3 @@
-import git_logo from "..//assets/git_logo.png";
 import insta_logo from "..//assets/insta_logo.png";
 
 function get_Logo(link) {
