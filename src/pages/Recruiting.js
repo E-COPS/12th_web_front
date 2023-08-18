@@ -200,7 +200,7 @@ const Recruiting = () => {
             문의사항 있으신가요?
           </text>
           <img className="recruiting_check" src={recruiting_check} />
-          <button className="applyButton" style={{ marginRight: "73vw" }}>
+          <button className="askButton">
             문의하기
           </button>
           <img className="recruiting_ecops_img" src={recruiting_ecops_img} />

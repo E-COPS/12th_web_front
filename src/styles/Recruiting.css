@@ -273,10 +273,6 @@ display: flex;
     font-family: 'Inter';
 }
 
-.recruiting_up{
-    
-}
-
 .basicContainer2{
 
     position: relative;
@@ -307,6 +303,23 @@ top:20vh;
 
 }
 
+.askButton{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 10vw;
+    height: 5vh;
+    margin-top:80vh;
+
+    background: #D9D9D9;
+    border: 1px solid #3399FF;
+    border-radius: 17px;
+    color:#3399FF;
+    box-shadow: 0 2px;
+    font-size: 1.0vw;
+    text-align: center;
+}
+
 .recruiting_check{
     position:relative;
     top:10vh;
@@ -324,10 +337,119 @@ top:20vh;
 }
 
 
-@media (max-width: 650px) {
+@media (max-width: 850px) {
 
     .black_text4{
         font-size:10px;
+    }
+
+    .challenger_box{
+        height: 30vh;
+    }
+
+    .begginer_box{
+        margin-top: -30vh;
+        height:30vh;
+    }
+
+    .red_text{
+        /* CHALLENGER TRACK */
+    top:2vh;
+    
+    }
+
+    .black_text1{
+    top:5vh;
+            
+    }
+
+    .purple_text{
+        top:2vh;
+    }
+
+    .black_text2{
+        top:0.4vh;
+        
+    }
+
+    .basicContainer{
+        margin-bottom: -28vh;
+    }
+    
+    .black_text3{
+        /* E-COPS 12.5기 모집 */
+        margin-top: -20vh;
+        padding-top: -10vh;
+    }
+    
+    .recruiting_star{
+       position: relative;
+    
+       right: 0vw;
+       top:-3vh;
+       width: 14vw;
+    }
+    
+    .black_text4{
+    
+        position: absolute;
+        padding-top:60vh;
+    }
+    
+    .applyButton{
+        width:100px;
+        height:3vh;
+        top:-3vh;
+    
+    }
+    
+    .applyButton:hover{
+        transform:scale(1.2);
+        cursor: pointer;
+    }
+
+    .black_bold_text{
+        /* RECRUITING PROCESS 
+    top:10vh;*/
+    
+    }
+
+    .basicContainer2{
+        margin-top:20vh;
+        min-height: 50vh;
+    
+    }
+    
+    .grayText{
+        /* 더 궁금한 내용이나 문의 사항이 있으신가요? */
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5vw;
+    
+    
+    color: #A9A7A3;
+    
+    position: absolute;
+    top:7vh;
+    
+    }
+    .recruiting_check{
+        top:3vh;
+        width:70vw;
+        left:4vw;
+    }
+
+    .askButton{
+        top:-40vh;
+        height:3vh;
+        width:15vw;
+    }
+
+    .recruiting_ecops_img{
+        top:17vh;
+        left:-2vw;
     }
         
   }
