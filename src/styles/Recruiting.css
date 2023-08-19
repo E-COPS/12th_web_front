@@ -1,455 +1,442 @@
-.challenger_box{
-box-sizing: border-box;
+.challenger_box {
+  box-sizing: border-box;
 
-position: relative;
-width: 50vw;
-height: 65vh;
-left:1px;
-margin-top: 20vw;
+  position: relative;
+  width: 50vw;
+  height: 65vh;
+  left: 1px;
+  margin-top: 20vw;
 
-background: #DBFE79;
-border: 1px solid #000000;
+  padding-top: 70px;
+  padding-left: 2vw;
+  padding-right: 8vw;
 
+  background: #dbfe79;
+  border: 1px solid #000000;
 }
 
-.begginer_box{
-  
-box-sizing: border-box;
+.begginer_box {
+  box-sizing: border-box;
 
-position: relative;
-width: 50vw;
-left:50vw;
-height: 65vh;
-margin-top:-65vh;
+  position: relative;
+  width: 50vw;
+  left: 50vw;
+  height: 65vh;
+  margin-top: -65vh;
 
-background: #9EEEFC;
-border: 1px solid #000000;
+  padding-top: 70px;
+  padding-left: 2vw;
+  padding-right: 8vw;
 
+  background: #9eeefc;
+  border: 1px solid #000000;
 }
 
-.red_text{
-    /* CHALLENGER TRACK */
-position:relative;
-top:10vh;
-left:3vw;
-
-font-family: 'Inter';
-font-weight: bold;
-font-size: 3.2vw;
-line-height: 58px;
-
-text-shadow: 3px 0px 1px black ;
-
-color: #FF0000;
-
-
+.red_text_div {
+  padding-bottom: 3vh;
 }
 
-.black_text1{
+.red_text {
+  /* CHALLENGER TRACK */
+  /* position: relative;
+  top: 10vh;
+  left: 3vw; */
 
-position:absolute;
-top:20vh;
-left:3vw;
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 3.2vw;
+  line-height: 58px;
 
-font-family: 'Inter';
-font-weight: normal;
-font-size: 3.2vw;
-line-height: 58px;
+  text-shadow: 3px 0px 1px black;
 
-color:#000000;
-    
+  color: #ff0000;
 }
 
-.purple_text{
-    /* BEGINNER TRACK */
+.black_text1 {
+  /* position: absolute; */
+  /* top: 25vh;
+  left: 3vw; */
 
-position:relative;
-top:10vh;
-left:3vw;
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  font-size: 1.2vw;
+  /* line-height: 10px; */
 
-font-family: 'Inter';
-font-weight: bold;
-font-size: 3.2vw;
-line-height: 58px;
-/* identical to box height */
+  padding-top: 3vw;
 
-color: #CE9EFF;
-
-text-shadow: 3px 0px 1px black;
-
-
+  color: #000000;
 }
 
-.black_text2{
-    position:relative;
-    left:2vw;
-
-    font-size:16px;
-    font-family: 'Inter';
-    line-height: 19px;
+.black_text_inside {
+  padding-bottom: 10px;
 }
 
-.basicContainer{
-    background-color: #f7f5f1;
-    position: relative;
-    justify-content: center;
-    display: flex;
-    min-height: 100vh;
-
+.purple_text_div {
+  padding-bottom: 3vh;
 }
 
-.black_text3{
-    /* E-COPS 12.5기 모집 */
+.purple_text {
+  /* BEGINNER TRACK */
 
-position: absolute;
-padding-top:50vh;
-justify-content: center;
+  /* position: relative; */
+  /* top: 10vh; */
+  /* left: 3vw; */
 
-font-family: 'Inter';
-font-weight: 700;
-font-size: 4.3vw;
-line-height: 77px;
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 3.2vw;
+  line-height: 58px;
+  /* identical to box height */
 
-color: #000000;
+  color: #ce9eff;
+
+  text-shadow: 3px 0px 1px black;
 }
 
-.recruiting_star{
-   position: relative;
+.black_text2 {
+  position: relative;
+  left: 2vw;
 
-   right:35vw;
-   top:25vh;
-
-   width: 14vw;
+  font-size: 16px;
+  font-family: "Inter";
+  line-height: 19px;
 }
 
-.black_text4{
-
-    position: absolute;
-    padding-top:70vh;
-    line-height: 19.36px;
-  
-    font-size:1.1vw;
-    font-family: 'Inter';
-    line-height: 19px;
+.basicContainer {
+  background-color: #f7f5f1;
+  position: relative;
+  justify-content: center;
+  display: flex;
+  min-height: 100vh;
 }
 
-.applyButton{
+.black_text3 {
+  /* E-COPS 12.5기 모집 */
 
+  position: absolute;
+  padding-top: 50vh;
+  justify-content: center;
 
-box-sizing: border-box;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 4.3vw;
+  line-height: 77px;
 
-position: absolute;
-width: 10vw;
-height: 5vh;
-margin-top:80vh;
-margin-left:73vw;
-
-background: #D9D9D9;
-border: 1px solid #3399FF;
-border-radius: 17px;
-color:#3399FF;
-box-shadow: 0 2px;
-font-size: 1.0vw;
-text-align: center;
-
-
+  color: #000000;
 }
 
-.applyButton:hover{
-    transform:scale(1.2);
-    cursor: pointer;
+.recruiting_star {
+  position: relative;
+
+  right: 35vw;
+  top: 25vh;
+
+  width: 14vw;
 }
 
-.recruiting_process{
-    position:relative;
-    padding-top:30vh;
-    justify-content: center;
-    width:90vw;
-    padding-bottom:25vh;
+.black_text4 {
+  position: absolute;
+  padding-top: 70vh;
+  line-height: 19.36px;
+
+  font-size: 1.1vw;
+  font-family: "Inter";
+  line-height: 19px;
 }
 
-.black_bold_text{
-    /* RECRUITING PROCESS */
-position:relative;
-top:20vh;
-left:25%;
+.applyButton {
+  box-sizing: border-box;
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 4.3vw;
+  position: absolute;
+  width: 10vw;
+  height: 5vh;
+  margin-top: 80vh;
+  margin-left: 20vw;
 
-color: #000000;
-
-
+  background: #d9d9d9;
+  border: 1px solid #3399ff;
+  border-radius: 17px;
+  color: #3399ff;
+  box-shadow: 0 2px;
+  font-size: 1vw;
+  text-align: center;
 }
 
-.black_bold_text2{
-    /* 자주 묻는 질문 */
-
-position: absolute;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 800;
-font-size: 4.3vw;
-line-height: 77px;
-
-color: #000000;
-
+.applyButton:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
-.toggleBox{
-    position:relative;
-    padding-top: 30vh;
-
-    text-align: center;
-    justify-content: center;
-
-
+.recruiting_process {
+  position: relative;
+  padding-top: 30vh;
+  justify-content: center;
+  width: 90vw;
+  padding-bottom: 25vh;
 }
 
-.questionToggle{
+.black_bold_text {
+  /* RECRUITING PROCESS */
+  position: relative;
+  top: 20vh;
+  left: 25%;
 
-position:relative;
-margin-bottom:3vh;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.3vw;
 
-box-sizing: border-box;
-
-width: 86vw;
-height: 10vh;
-
-background: #F0EEEB;
-border-radius: 5px;
-border:none;
-
-align-items: center;
-display: flex;
-
-
+  color: #000000;
 }
 
-.toggle_updown{
-    margin-left: auto;
-    padding-right: 25px;
+.black_bold_text2 {
+  /* 자주 묻는 질문 */
+
+  position: absolute;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 4.3vw;
+  line-height: 77px;
+
+  color: #000000;
 }
 
-.questionToggle2{
-    position: relative;
-    
-    box-sizing: border-box;
-    
-    width: 86vw;
-    height: 72px;
-    
-    background: #FFFFFF;
-    border-radius: 5px;
-    border:none;
+.toggleBox {
+  position: relative;
+  padding-top: 30vh;
 
-    align-items: center;
-    display: flex;
-    
-    
+  text-align: center;
+  justify-content: center;
 }
 
-.answerToggle{
-/*answeBox */
-margin:auto;
+.questionToggle {
+  position: relative;
+  margin-bottom: 3vh;
 
-margin-bottom: 3vh;
-width: 86vw;
-height: 178px;
+  box-sizing: border-box;
 
+  width: 86vw;
+  height: 10vh;
 
-background: #F0EEEB;
+  background: #f0eeeb;
+  border-radius: 5px;
+  border: none;
 
-display: flex;
-
+  align-items: center;
+  display: flex;
 }
 
-.black_text5{
-    
-    font-size:16px;
-    font-family: 'Inter';
+.toggle_updown {
+  margin-left: auto;
+  padding-right: 25px;
 }
 
-.basicContainer2{
+.questionToggle2 {
+  position: relative;
 
-    position: relative;
-    justify-content: center;
-    text-align: center;
-    display: flex;
-  
-    background: #F0EEEB;
-    min-height: 100vh;
-    margin-bottom: 10vh;
+  box-sizing: border-box;
 
+  width: 86vw;
+  height: 72px;
 
+  background: #ffffff;
+  border-radius: 5px;
+  border: none;
+
+  align-items: center;
+  display: flex;
 }
 
-.grayText{
-    /* 더 궁금한 내용이나 문의 사항이 있으신가요? */
+.answerToggle {
+  /*answeBox */
+  margin: auto;
+  align-items: center;
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 4.3vw;
+  margin-bottom: 3vh;
+  width: 86vw;
+  height: 30vh;
 
+  background: #f0eeeb;
 
-color: #A9A7A3;
-
-position: absolute;
-top:20vh;
-
+  display: flex;
+  flex-direction: column;
 }
 
-.askButton{
-    box-sizing: border-box;
-
-    position: absolute;
-    width: 10vw;
-    height: 5vh;
-    margin-top:80vh;
-
-    background: #D9D9D9;
-    border: 1px solid #3399FF;
-    border-radius: 17px;
-    color:#3399FF;
-    box-shadow: 0 2px;
-    font-size: 1.0vw;
-    text-align: center;
+.toggle_answer_box {
+  padding: 2vw;
+  align-self: center;
 }
 
-.recruiting_check{
-    position:relative;
-    top:10vh;
-
-    width:40vw;         
+.toggle_content {
+  padding-bottom: 10px;
 }
 
-.recruiting_ecops_img{
-    position: relative;
-
-    top:30vh;
-    left: 15vw;;
-
-    width:22vw;
+.black_text5 {
+  font-size: 16px;
+  font-family: "Inter";
+  font-weight: bold;
 }
 
+.basicContainer2 {
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+
+  background: #f0eeeb;
+  margin-bottom: 10vh;
+}
+
+.grayText {
+  /* 더 궁금한 내용이나 문의 사항이 있으신가요? */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.3vw;
+
+  color: #a9a7a3;
+
+  position: absolute;
+  top: 20vh;
+}
+
+.askButton {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 10vw;
+  height: 5vh;
+  margin-top: 80vh;
+
+  background: #d9d9d9;
+  border: 1px solid #3399ff;
+  border-radius: 17px;
+  color: #3399ff;
+  box-shadow: 0 2px;
+  font-size: 1vw;
+  text-align: center;
+}
+
+.recruiting_check {
+  /* position: relative; */
+
+  width: 100vw;
+}
+
+.recruiting_ecops_img {
+  position: relative;
+
+  top: 30vh;
+  left: 15vw;
+
+  width: 22vw;
+}
 
 @media (max-width: 850px) {
+  .black_text4 {
+    font-size: 10px;
+  }
 
-    .black_text4{
-        font-size:10px;
-    }
+  .challenger_box {
+    height: 30vh;
+  }
 
-    .challenger_box{
-        height: 30vh;
-    }
+  .begginer_box {
+    margin-top: -30vh;
+    height: 30vh;
+  }
 
-    .begginer_box{
-        margin-top: -30vh;
-        height:30vh;
-    }
+  .red_text {
+    /* CHALLENGER TRACK */
+    top: 2vh;
+  }
 
-    .red_text{
-        /* CHALLENGER TRACK */
-    top:2vh;
-    
-    }
+  .black_text1 {
+    top: 5vh;
+  }
 
-    .black_text1{
-    top:5vh;
-            
-    }
+  .purple_text {
+    top: 2vh;
+  }
 
-    .purple_text{
-        top:2vh;
-    }
+  .black_text2 {
+    top: 0.4vh;
+  }
 
-    .black_text2{
-        top:0.4vh;
-        
-    }
+  .basicContainer {
+    margin-bottom: -28vh;
+  }
 
-    .basicContainer{
-        margin-bottom: -28vh;
-    }
-    
-    .black_text3{
-        /* E-COPS 12.5기 모집 */
-        margin-top: -20vh;
-        padding-top: -10vh;
-    }
-    
-    .recruiting_star{
-       position: relative;
-    
-       right: 0vw;
-       top:-3vh;
-       width: 14vw;
-    }
-    
-    .black_text4{
-    
-        position: absolute;
-        padding-top:60vh;
-    }
-    
-    .applyButton{
-        width:100px;
-        height:3vh;
-        top:-3vh;
-    
-    }
-    
-    .applyButton:hover{
-        transform:scale(1.2);
-        cursor: pointer;
-    }
+  .black_text3 {
+    /* E-COPS 12.5기 모집 */
+    margin-top: -20vh;
+    padding-top: -10vh;
+  }
 
-    .black_bold_text{
-        /* RECRUITING PROCESS 
+  .recruiting_star {
+    position: relative;
+
+    right: 0vw;
+    top: -3vh;
+    width: 14vw;
+  }
+
+  .black_text4 {
+    position: absolute;
+    padding-top: 60vh;
+  }
+
+  .applyButton {
+    width: 100px;
+    height: 3vh;
+    top: -3vh;
+  }
+
+  .applyButton:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+
+  .black_bold_text {
+    /* RECRUITING PROCESS 
     top:10vh;*/
-    
-    }
+  }
 
-    .basicContainer2{
-        margin-top:20vh;
-        min-height: 50vh;
-    
-    }
-    
-    .grayText{
-        /* 더 궁금한 내용이나 문의 사항이 있으신가요? */
-    
-    font-family: 'Inter';
+  .basicContainer2 {
+    margin-top: 20vh;
+    min-height: 50vh;
+  }
+
+  .grayText {
+    /* 더 궁금한 내용이나 문의 사항이 있으신가요? */
+
+    font-family: "Inter";
     font-style: normal;
     font-weight: 700;
     font-size: 5vw;
-    
-    
-    color: #A9A7A3;
-    
+
+    color: #a9a7a3;
+
     position: absolute;
-    top:7vh;
-    
-    }
-    .recruiting_check{
-        top:3vh;
-        width:70vw;
-        left:4vw;
-    }
-
-    .askButton{
-        top:-40vh;
-        height:3vh;
-        width:15vw;
-    }
-
-    .recruiting_ecops_img{
-        top:17vh;
-        left:-2vw;
-    }
-        
+    top: 7vh;
   }
+  .recruiting_check {
+    top: 3vh;
+    width: 70vw;
+    left: 4vw;
+  }
+
+  .askButton {
+    top: -40vh;
+    height: 3vh;
+    width: 15vw;
+  }
+
+  .recruiting_ecops_img {
+    top: 17vh;
+    left: -2vw;
+  }
+}
