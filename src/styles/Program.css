@@ -1,244 +1,219 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap");
 
-.basicContainer{
-    background-color: #f7f5f1;
-    position: relative;
-    justify-content: center;
-    display: flex;
-    min-height: 100vh;
-    padding-bottom:10vh;
+.basicContainer {
+  background-color: #f7f5f1;
+  position: relative;
+  justify-content: center;
+  display: flex;
+  min-height: 100vh;
+  padding-bottom: 10vh;
 }
 
-.boldText{
-    /* Sessions */
+.boldText {
+  /* Sessions */
 
-position: absolute;
-top:30vh;
-left:6vw;
+  position: absolute;
+  top: 30vh;
+  left: 6vw;
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 900;
-font-size: 64px;
-line-height: 77px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 77px;
 
-color: #000000;
-
-
+  color: #000000;
 }
 
-.smallText{
-position: absolute;
-left: 6vw;
-top: 45vh;
+.smallText {
+  position: absolute;
+  left: 6vw;
+  top: 45vh;
 
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 29px;
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 23px;
-line-height: 29px;
-
-color: #000000;
-
-
+  color: #000000;
 }
 
-.whiteBox{
-    /* Subtract */
+.whiteBox {
+  /* Subtract */
 
-box-sizing: border-box;
+  box-sizing: border-box;
 
-position: absolute;
-width: 44vw;
-height: 40.5vh;
+  position: absolute;
+  width: 44vw;
+  height: 40.5vh;
 
-left:6vw;
-top: 60vh;
+  left: 6vw;
+  top: 60vh;
 
-background: #FFFFFF;
-border: 1px solid #3399FF;
+  background: #ffffff;
+  border: 1px solid #3399ff;
 
-
-text-align: center;
-
+  text-align: center;
 }
 
-.program_beginner_img{
-
-    margin-top:3vh;
-    margin-right:1vw;
-    width: 40vw;    
+.program_beginner_img {
+  margin-top: 3vh;
+  margin-right: 1vw;
+  width: 40vw;
 }
 
-.bold_small_text{
-    /* Beginner Track */
+.bold_small_text {
+  /* Beginner Track */
 
-position: relative;
+  position: relative;
 
-bottom:30%;
+  bottom: 30%;
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 900;
-font-size:2.5vw;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2.5vw;
 
-color: #000000;
-
+  color: #000000;
 }
 
-.button1{
-    /* 자세히 보기 → */
+.button1 {
+  /* 자세히 보기 → */
 
-position:relative;
-left:16vw;
-width:30vw;
+  position: relative;
+  left: 16vw;
+  width: 30vw;
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 800;
-font-size: 16px;
-line-height: 19px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
 
-border: none;
-background-color: white;
+  border: none;
+  background-color: white;
 
-color: #3399FF;
-
-
+  color: #3399ff;
 }
 
-.grayBox{
+.grayBox {
+  box-sizing: border-box;
 
-box-sizing: border-box;
+  position: absolute;
+  width: 44vw;
+  height: 40.5vh;
+  left: 49.9vw;
+  top: 60vh;
 
-position: absolute;
-width: 44vw;
-height: 40.5vh;
-left:49.9vw;
-top: 60vh;
-
-background: #F0EEEB;
-border: 1px solid #3399FF;
-
+  background: #f0eeeb;
+  border: 1px solid #3399ff;
 }
 
-.button2{
-    position:relative;
-    top:-2vh;
-    left:33vw;
+.button2 {
+  position: relative;
+  top: -2vh;
+  left: 33vw;
 
-    border: none;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 19px;
-    
-    color: #3399FF; 
+  border: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #3399ff;
 }
 
-.program_challenger_img{
-    padding-top: 3vh;
-    width: 40vw;
+.program_challenger_img {
+  padding-top: 3vh;
+  width: 40vw;
 }
 
-.img_grid{
-   margin-top:65vh;
-   padding-bottom: 20vh;
+.img_grid {
+  margin-top: 65vh;
+  padding-bottom: 20vh;
 
-   display: grid;
-   column-gap: 16px;
-   row-gap: 40px;
+  display: grid;
+  column-gap: 16px;
+  row-gap: 40px;
 }
 
 @media (max-width: 999px) {
-    .img_grid {
-      grid-template-columns: 1fr;
-    }
+  .img_grid {
+    grid-template-columns: 1fr;
   }
-  
-  @media (min-width: 1000px) {
-    .img_grid {
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-  }
+}
 
-.program_team_logo{
-   margin:1vw;
+@media (min-width: 1000px) {
+  .img_grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.program_team_logo {
+  margin: 1vw;
 }
 
 @media (max-width: 1000px) {
-    .whiteBox {
-        height: 30vh;;
-    }
-
-    .grayBox{
-        height: 30vh;
-        
-    }
-
-    .button1{
-        margin-left: -7vw;
-    }
-
-    .button2{
-        margin-left: -7vw;
-    }
-
-    .basicContainer{
-        padding-bottom:30vh;
-    }
-    
+  .whiteBox {
+    height: 30vh;
   }
 
+  .grayBox {
+    height: 30vh;
+  }
+
+  .button1 {
+    margin-left: -7vw;
+  }
+
+  .button2 {
+    margin-left: -7vw;
+  }
+
+  .basicContainer {
+    padding-bottom: 30vh;
+  }
+}
 
 @media (max-width: 600px) {
-    .whiteBox {
-      margin-top:5vh;
-      height: 20vh;
-      width: 90vw;
+  .whiteBox {
+    margin-top: 5vh;
+    height: 20vh;
+    width: 90vw;
+  }
 
-    }
+  .grayBox {
+    height: 20vh;
+    width: 90vw;
+    margin-left: -44vw;
+    margin-top: 30vh;
+  }
 
-    .grayBox{
-        
-        height:20vh;
-        width:90vw;
-        margin-left:-44vw;
-        margin-top:30vh;
-    
-        
-    }
+  .program_beginner_img {
+    width: 50vh;
+  }
 
-    .program_beginner_img{
-        width:50vh;
-    }
+  .program_challenger_img {
+    margin-left: 3vw;
+    width: 52vh;
+    margin-top: -2vh;
+  }
 
-    .program_challenger_img{
-        margin-left: 3vw;
-        width: 52vh;
-        margin-top:-2vh;
-    }
+  .button1 {
+    display: flex;
+    top: -15vh;
+    left: 65vw;
+  }
 
-    .button1{
-        display: flex;
-        top:-15vh;
-        left:65vw;
+  .button2 {
+    display: flex;
+    top: -16vh;
+    left: 65vw;
+  }
 
-    }
-
-    .button2{
-        display: flex;
-        top:-16vh;
-        left:65vw;
-
-    }
-
-    .basicContainer{
-        padding-bottom:50vh;
-    }
-        
-    }
-
-   
+  .basicContainer {
+    padding-bottom: 50vh;
+  }
+}

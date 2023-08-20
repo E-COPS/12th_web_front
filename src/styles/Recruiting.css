@@ -326,6 +326,16 @@
   width: 100vw;
 }
 
+@media (max-width: 650px) {
+  .recruiting_check {
+    display: none;
+  }
+
+  .recruiting_extra {
+    display: none;
+  }
+}
+
 .recruiting_ecops_img {
   position: relative;
 
@@ -338,6 +348,7 @@
 @media (max-width: 850px) {
   .black_text4 {
     font-size: 10px;
+    padding-left: 30px;
   }
 
   .challenger_box {
@@ -366,7 +377,7 @@
   }
 
   .basicContainer {
-    padding-top: -20vh;;
+    padding-top: -20vh;
     margin-bottom: -40vh;
   }
 
@@ -390,7 +401,7 @@
   }
 
   .applyButton {
-    width: 100px;
+    width: 80px;
     height: 3vh;
     top: -3vh;
   }
@@ -400,8 +411,8 @@
     cursor: pointer;
   }
 
-  .recruiting_process{
-    padding-top:15vh;
+  .recruiting_process {
+    padding-top: 15vh;
   }
 
   .basicContainer2 {

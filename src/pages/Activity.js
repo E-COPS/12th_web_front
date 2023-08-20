@@ -4,97 +4,126 @@ import activity_example_img from "../assets/activity_example_img.svg";
 
 const Activity = () => {
   const activityId = useRef(0);
+  const [activity_data, setData] = useState([]);
 
-  const activity_data = [
-    {
-      year: "12",
-      type: "보안뉴스",
-      img: activity_example_img,
-      title: "보안뉴스 1",
-      author: "글쓴이",
-      activity_description: "12기 프로젝트 2입니다.",
-      link: "https://www.instagram.com/ecops_ewha/",
-      git_link: "",
-      id: activityId.current++,
-    },
-    {
-      year: "12",
-      type: "보안뉴스",
-      img: activity_example_img,
-      title: "보안뉴스 2",
-      author: "",
-      activity_description: "12기 프로젝트 3입니다.",
-      link: "",
-      git_link: "",
-      id: activityId.current++,
-    },
-    {
-      year: "12",
-      type: "CTF",
-      img: activity_example_img,
-      title: "CTF 1",
-      author: "",
-      activity_description: "12기 CTF 1입니다.",
-      link: "",
-      git_link: "",
-      id: activityId.current++,
-    },
-    {
-      year: "11",
-      type: "보안뉴스",
-      img: activity_example_img,
-      title: "보안뉴스 1",
-      author: "",
-      activity_description: "11기 보안뉴스 1입니다.",
-      link: "https://www.instagram.com/ecops_ewha/",
-      git_link: "",
-      id: activityId.current++,
-    },
-    {
-      year: "13",
-      type: "보안뉴스",
-      img: activity_example_img,
-      title: "보안뉴스 1",
-      author: "글쓴이",
-      activity_description: "13기 보안뉴스 1입니다.",
-      link: "https://www.instagram.com/ecops_ewha/",
-      git_link: "",
-      id: activityId.current++,
-    },
-    {
-      year: "13",
-      type: "보안뉴스",
-      img: activity_example_img,
-      title: "보안뉴스 2",
-      author: "",
-      activity_description: "13기 보안뉴스 2입니다.",
-      link: "",
-      git_link: "",
-      id: activityId.current++,
-    },
-    {
-      year: "13",
-      type: "CTF",
-      img: activity_example_img,
-      title: "CTF 1",
-      author: "",
-      activity_description: "13기 CTF 1입니다.",
-      link: "",
-      git_link: "",
-      id: activityId.current++,
-    },
-    {
-      year: "13",
-      type: "CTF",
-      img: activity_example_img,
-      title: "CTF 2",
-      author: "",
-      activity_description: "13기 CTF 2입니다.",
-      link: "",
-      git_link: "",
-      id: activityId.current++,
-    },
-  ];
+  const getData = async () => {
+    const res = await fetch(
+      "http://django-env.eba-rbr47dt9.ap-northeast-2.elasticbeanstalk.com/api-news/news/"
+    ).then((res) => res.json());
+    console.log(res);
+
+    const initData = res.slice(0, 20).map((it) => {
+      return {
+        year: it.year,
+        type: it.type,
+        title: it.title,
+        link: it.link,
+        id: activityId.current++,
+        comment: it.comment,
+        insta_link: it.insta_link,
+        activity_description: it.activity_description,
+        author: it.author,
+        git_link: it.git_link,
+        img: it.img,
+      };
+    });
+    setData(initData);
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
+
+  // const activity_data = [
+  //   {
+  //     year: "12",
+  //     type: "보안뉴스",
+  //     img: activity_example_img,
+  //     title: "보안뉴스 1",
+  //     author: "글쓴이",
+  //     activity_description: "12기 프로젝트 2입니다.",
+  //     link: "https://www.instagram.com/ecops_ewha/",
+  //     git_link: "",
+  //     id: activityId.current++,
+  //   },
+  //   {
+  //     year: "12",
+  //     type: "보안뉴스",
+  //     img: activity_example_img,
+  //     title: "보안뉴스 2",
+  //     author: "",
+  //     activity_description: "12기 프로젝트 3입니다.",
+  //     link: "",
+  //     git_link: "",
+  //     id: activityId.current++,
+  //   },
+  //   {
+  //     year: "12",
+  //     type: "CTF",
+  //     img: activity_example_img,
+  //     title: "CTF 1",
+  //     author: "",
+  //     activity_description: "12기 CTF 1입니다.",
+  //     link: "",
+  //     git_link: "",
+  //     id: activityId.current++,
+  //   },
+  //   {
+  //     year: "11",
+  //     type: "보안뉴스",
+  //     img: activity_example_img,
+  //     title: "보안뉴스 1",
+  //     author: "",
+  //     activity_description: "11기 보안뉴스 1입니다.",
+  //     link: "https://www.instagram.com/ecops_ewha/",
+  //     git_link: "",
+  //     id: activityId.current++,
+  //   },
+  //   {
+  //     year: "13",
+  //     type: "보안뉴스",
+  //     img: activity_example_img,
+  //     title: "보안뉴스 1",
+  //     author: "글쓴이",
+  //     activity_description: "13기 보안뉴스 1입니다.",
+  //     link: "https://www.instagram.com/ecops_ewha/",
+  //     git_link: "",
+  //     id: activityId.current++,
+  //   },
+  //   {
+  //     year: "13",
+  //     type: "보안뉴스",
+  //     img: activity_example_img,
+  //     title: "보안뉴스 2",
+  //     author: "",
+  //     activity_description: "13기 보안뉴스 2입니다.",
+  //     link: "",
+  //     git_link: "",
+  //     id: activityId.current++,
+  //   },
+  //   {
+  //     year: "13",
+  //     type: "CTF",
+  //     img: activity_example_img,
+  //     title: "CTF 1",
+  //     author: "",
+  //     activity_description: "13기 CTF 1입니다.",
+  //     link: "",
+  //     git_link: "",
+  //     id: activityId.current++,
+  //   },
+  //   {
+  //     year: "13",
+  //     type: "CTF",
+  //     img: activity_example_img,
+  //     title: "CTF 2",
+  //     author: "",
+  //     activity_description: "13기 CTF 2입니다.",
+  //     link: "",
+  //     git_link: "",
+  //     id: activityId.current++,
+  //   },
+  // ];
 
   const [activityData, setActivityData] = useState([]);
 

@@ -30,6 +30,11 @@
   padding-bottom: 10px;
 }
 
+.member_img {
+  width: 600px;
+  height: 60%;
+}
+
 .Activity_grid {
   display: grid;
   column-gap: 16px;
@@ -54,7 +59,7 @@
 
 @media (max-width: 650px) {
   .member_img {
-    width: 100%;
+    width: 50%;
   }
   .activity_box {
     width: 90%;
@@ -70,13 +75,26 @@
 }
 
 .activity_box {
-  height: 45vh;
+  /* height: 50vh;
   border: 1px solid #e2e2e2;
 
   padding: 7px;
   font-family: "Inter", sans-serif;
   margin-left: 3vw;
   margin-right: 3vw;
+
+  width: 50vw;
+
+  cursor: pointer; */
+
+  height: 500px;
+  border: 1px solid #e2e2e2;
+
+  padding: 7px;
+  font-family: "Inter", sans-serif;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  margin-bottom: 20px;
 
   cursor: pointer;
 }

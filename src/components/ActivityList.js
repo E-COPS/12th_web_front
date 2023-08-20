@@ -33,7 +33,10 @@ const ActivityList = ({
         <text className="activity_title">{title}</text>
         <text className="author">{author}</text>
         <text className="activity_description">{activity_description}</text>
-        {get_Logo(`${link}`)}
+        {/* {get_Logo(`${link}`)} */}
+        <a className="sns_link" href={link}>
+          <img className="sns_logo_button" alt="sns_logo" src={insta_logo} />
+        </a>
       </div>
     </div>
   );

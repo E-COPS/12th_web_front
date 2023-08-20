@@ -1,41 +1,66 @@
 import React, { useEffect, useRef, useState } from "react";
 import ProgramList from "../components/ProgramList";
 import activity_example_img from "../assets/activity_example_img.svg";
-import "../styles/Program_1.css"
+import "../styles/Program_1.css";
 
 const Challenger = () => {
   const programId = useRef(0);
+  const [program_data, setData] = useState([]);
 
-  const program_data = [
-    {
-      year: "12",
-      track: "beginner",
-      img: activity_example_img,
-      project_name: "프로젝트 2",
-      project_description: "12기 프로젝트 2입니다.",
-      insta_link: "",
-      git_link: "",
-      id: programId.current++,
-    },
-    {
-      year: "12",
-      track: "beginner",
-      img: activity_example_img,
-      project_name: "프로젝트 1",
-      project_description: "12기 프로젝트 1입니다.",
-      insta_link: "",
-      git_link: "",
-      id: programId.current++,
-    },
-  ];
+  const getData = async () => {
+    const res = await fetch(
+      "http://django-env.eba-rbr47dt9.ap-northeast-2.elasticbeanstalk.com/challenger/"
+    ).then((res) => res.json());
+    console.log(res);
+
+    const initData = res.slice(0, 20).map((it) => {
+      return {
+        year: it.year,
+        project_name: it.program_name,
+        project_description: it.program_description,
+        id: programId.current++,
+        insta_link: it.insta_link,
+        img: it.img,
+        track: it.track,
+      };
+    });
+    setData(initData);
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
+
+  // const program_data = [
+  //   {
+  //     year: "12",
+  //     track: "challenger",
+  //     img: activity_example_img,
+  //     project_name: "프로젝트 2",
+  //     project_description: "12기 프로젝트 2입니다.",
+  //     insta_link: "",
+  //     git_link: "",
+  //     id: programId.current++,
+  //   },
+  //   {
+  //     year: "12",
+  //     track: "challenger",
+  //     img: activity_example_img,
+  //     project_name: "프로젝트 1",
+  //     project_description: "12기 프로젝트 1입니다.",
+  //     insta_link: "",
+  //     git_link: "",
+  //     id: programId.current++,
+  //   },
+  // ];
 
   const [programData, setProgramData] = useState([]);
   const [classData, setClassData] = useState("12");
 
-  useEffect(()=>{
-    setProgramData(programData.filter((it)=>it.track=="challenger"));
+  useEffect(() => {
+    setProgramData(programData.filter((it) => it.track == "challenger"));
     handleClick("11");
-  },[]);
+  }, []);
 
   const handleClick = (value) => {
     setProgramData(program_data.filter((it) => it.year === value));

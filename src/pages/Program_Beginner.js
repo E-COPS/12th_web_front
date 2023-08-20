@@ -2,53 +2,79 @@ import React, { useRef, useState } from "react";
 import ProgramList from "../components/ProgramList";
 import activity_example_img from "../assets/activity_example_img.svg";
 import { useEffect } from "react";
-import "../styles/Program_1.css"
+import "../styles/Program_1.css";
 
 const Beginner = () => {
   const programId = useRef(0);
 
-  const program_data = [
-    {
-      year: "12",
-      track: "beginner",
-      img: activity_example_img,
-      project_name: "프로젝트 2",
-      project_description: "12기 프로젝트 2입니다.",
-      insta_link: "",
-      git_link: "",
-      id: programId.current++,
-    },
-    {
-      year: "12",
-      track: "beginner",
-      img: activity_example_img,
-      project_name: "프로젝트 1",
-      project_description: "12기 프로젝트 1입니다.",
-      insta_link: "",
-      git_link: "",
-      id: programId.current++,
-    },
-    {
-        year: "12",
-        track: "beginner",
-        img: activity_example_img,
-        project_name: "프로젝트 1",
-        project_description: "12기 프로젝트 1입니다.",
-        insta_link: "",
-        git_link: "",
+  const [program_data, setData] = useState([]);
+
+  const getData = async () => {
+    const res = await fetch(
+      "http://django-env.eba-rbr47dt9.ap-northeast-2.elasticbeanstalk.com/beginner/"
+    ).then((res) => res.json());
+    console.log(res);
+
+    const initData = res.slice(0, 20).map((it) => {
+      return {
+        year: it.year,
+        project_name: it.program_name,
+        project_description: it.program_description,
         id: programId.current++,
-      },
-  ];
+        insta_link: it.insta_link,
+        img: it.img,
+        track: it.track,
+      };
+    });
+    setData(initData);
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
+
+  // const program_data = [
+  //   {
+  //     year: "12",
+  //     track: "beginner",
+  //     img: activity_example_img,
+  //     project_name: "프로젝트 2",
+  //     project_description: "12기 프로젝트 2입니다.",
+  //     insta_link: "",
+  //     git_link: "",
+  //     id: programId.current++,
+  //   },
+  //   {
+  //     year: "12",
+  //     track: "beginner",
+  //     img: activity_example_img,
+  //     project_name: "프로젝트 1",
+  //     project_description: "12기 프로젝트 1입니다.",
+  //     insta_link: "",
+  //     git_link: "",
+  //     id: programId.current++,
+  //   },
+  //   {
+  //       year: "12",
+  //       track: "beginner",
+  //       img: activity_example_img,
+  //       project_name: "프로젝트 1",
+  //       project_description: "12기 프로젝트 1입니다.",
+  //       insta_link: "",
+  //       git_link: "",
+  //       id: programId.current++,
+  //     },
+  // ];
 
   const [programData, setProgramData] = useState([]);
   const [classData, setClassData] = useState("12");
 
-  useEffect(()=>{
+  useEffect(() => {
     handleClick("11");
-  },[]);
-  useEffect(()=>{
-    setProgramData(programData.filter((it)=>it.track=="beginner"));
-  },[]);
+  }, []);
+  useEffect(() => {
+    setProgramData(programData.filter((it) => it.track == "beginner"));
+  }, []);
 
   const handleClick = (value) => {
     setProgramData(program_data.filter((it) => it.year === value));
