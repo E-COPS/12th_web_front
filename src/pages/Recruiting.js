@@ -189,7 +189,6 @@ const Recruiting = () => {
       </div>
       <div className="basicContainer">
         <div className="recruiting_process">
-          <text className="black_bold_text">RECRUITING PROCESS</text>
           <img
             alt="recruiting_preocess"
             className="recruiting_process"

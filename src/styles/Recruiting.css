@@ -341,14 +341,13 @@
   }
 
   .challenger_box {
-    height: 30vh;
+    height: 50vh;
   }
 
   .begginer_box {
-    margin-top: -30vh;
-    height: 30vh;
+    margin-top: -50vh;
+    height: 50vh;
   }
-
   .red_text {
     /* CHALLENGER TRACK */
     top: 2vh;
@@ -367,7 +366,8 @@
   }
 
   .basicContainer {
-    margin-bottom: -28vh;
+    padding-top: -20vh;;
+    margin-bottom: -40vh;
   }
 
   .black_text3 {
@@ -400,9 +400,8 @@
     cursor: pointer;
   }
 
-  .black_bold_text {
-    /* RECRUITING PROCESS 
-    top:10vh;*/
+  .recruiting_process{
+    padding-top:15vh;
   }
 
   .basicContainer2 {
