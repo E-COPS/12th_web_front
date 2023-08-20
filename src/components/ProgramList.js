@@ -11,17 +11,17 @@ const ProgramList = ({
   git_link,
 }) => {
   return (
-    <div className="activity_box">
+    <div className="program1_box">
       <img className="member_img" alt="" src={img} />
-      <div className="activity_info">
-        <text>{project_name}</text>
-        <a href={git_link}>
+      <div className="program1_info">
+        <text className="program1_title">{project_name}</text>
+        <text className="program1_description">{project_description}</text>
+        <a className="sns_link" href={git_link}>
           <img className="sns_logo_button" alt="sns_logo" src={git_logo} />
         </a>
-        <a href={insta_link}>
+        <a className="sns_link" href={insta_link}>
           <img className="sns_logo_button" alt="sns_logo" src={insta_logo} />
         </a>
-        <text>{project_description}</text>
       </div>
     </div>
   );

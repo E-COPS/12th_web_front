@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap");
+
+.title {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 60px;
+
+  padding-top: 9vh;
+}
+
+.buttonContainer .buttonRowContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.typeButton {
+  display: flex;
+  justify-content: space-evenly;
+
+  padding-top: 10px;
+  border-top: 1px solid #e2e2e2;
+}
+
+.yearButton {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+
+  padding-bottom: 10px;
+}
+
+.program1_grid {
+  display: grid;
+  column-gap: 16px;
+  row-gap: 40px;
+}
+
+.program1_List {
+  width: 100vw;
+  height: auto;
+  align-content: space-around;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 999px) {
+  .program1_grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .member_img {
+    width: 100%;
+  }
+  .program1_box {
+    width: 90%;
+    height: 400px;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-bottom: 20px;
+
+  }
+}
+
+@media (min-width: 1000px) {
+  .program1_grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.program1_box {
+height: 402px;
+  border: 1px solid #e2e2e2;
+
+  padding: 7px;
+  font-family: "Inter", sans-serif;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  margin-bottom: 20px;
+
+  cursor: pointer;
+}
+
+.program1_List .program1_info {
+  display: flex;
+  flex-direction: column;
+
+  padding: 8px;
+}
+
+.program1_info .year_text {
+  color: #ffffff;
+  width: 45px;
+  background-color: #515151;
+  font-size: 15px;
+
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.program1_info .program1_title {
+  font-size: 22px;
+  font-weight: bold;
+
+  padding-top: 15px;
+}
+
+.program1_info .author {
+  font-size: 15px;
+  color: #a9a7a3;
+}
+
+.program1_info .program1_description {
+  font-size: 15px;
+  color: #a9a7a3;
+}
+
+.program1_info .sns_link {
+  display: flex;
+  padding-top: 3vh;
+  justify-content: right;
+}

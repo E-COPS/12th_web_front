@@ -78,8 +78,8 @@ const Beginner = () => {
         })}
       </div>
 
-      <div className="ActivityList">
-        <div className="Activity_grid">
+      <div className="program1_List">
+        <div className="program1_grid">
           {programData.map((it) => (
             <ProgramList {...it} />
           ))}
