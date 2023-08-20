@@ -16,9 +16,9 @@ const ProgramList = ({
       <div className="program1_info">
         <text className="program1_title">{project_name}</text>
         <text className="program1_description">{project_description}</text>
-        <a className="sns_link" href={git_link}>
+        {/* <a className="sns_link" href={git_link}>
           <img className="sns_logo_button" alt="sns_logo" src={git_logo} />
-        </a>
+        </a> */}
         <a className="sns_link" href={insta_link}>
           <img className="sns_logo_button" alt="sns_logo" src={insta_logo} />
         </a>
