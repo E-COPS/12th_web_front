@@ -157,11 +157,11 @@
 
 @media (max-width: 1000px) {
   .whiteBox {
-    height: 30vh;
+    height: 25vh;
   }
 
   .grayBox {
-    height: 30vh;
+    height: 25vh;
   }
 
   .button1 {
@@ -189,31 +189,39 @@
     width: 90vw;
     margin-left: -44vw;
     margin-top: 30vh;
+
+    text-align: center;
   }
 
   .program_beginner_img {
-    width: 50vh;
+    width: 40vh;
   }
 
   .program_challenger_img {
-    margin-left: 3vw;
-    width: 52vh;
+    width: 40vh;
     margin-top: -2vh;
   }
 
   .button1 {
     display: flex;
+    width:31vw;
     top: -15vh;
     left: 65vw;
   }
 
   .button2 {
     display: flex;
-    top: -16vh;
+    width:31vw;
+    top: -14vh;
     left: 65vw;
   }
 
   .basicContainer {
     padding-bottom: 50vh;
+  }
+
+  .smallText {
+    font-size: 19px;
+  
   }
 }

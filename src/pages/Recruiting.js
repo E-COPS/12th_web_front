@@ -155,7 +155,7 @@ const Recruiting = () => {
           </text>
         </div>
         <text className="black_text2">
-          E-COPS는 두가지 트럭으로 나누어 세션을 진행합니다.
+          E-COPS는 두가지 트랙으로 나누어 세션을 진행합니다.
           <br />
           CHALLENGER TRACK과 BEGIENNER TRACK, 원하는 트랙을 선택하여 E_COPS에서
           자유롭게 자신의 능력을 펼쳐보세요.
